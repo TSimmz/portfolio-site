@@ -1,4 +1,5 @@
 import React from 'react';
+import { Layout } from 'components/common';
 import ThemeProvider from 'providers/ThemeProvider';
 
 export const wrapRootElement = ({ element }) => (
