@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "name": "Github",
+    "link": "https://github.com/tsimmz"
+  },
+  {
+    "id": 1,
+    "name": "LinkedIn",
+    "link": "https://linkedin.com/in/tylersimoni"
+  },
+  {
+    "id": 2,
+    "name": "Instagram",
+    "link": "http://instagram.com/t_simmz"
+  },
+  {
+    "id": 3,
+    "name": "Twitter",
+    "link": "https://twitter.com/tylersimoni"
+  }
+]

@@ -1,0 +1,149 @@
+{
+  "name": "Tyler Simoni",
+  "location": "St Petersburg, FL",
+  "phone": "724.372.9354",
+  "email": "tyler.simoni.8@gmail.com",
+  "education": {
+    "school": "University of South Florida",
+    "degree": "B.S. in Computer Engineering",
+    "location": "Tampa, FL",
+    "graduation": "December 2017"
+  },
+  "workExperience": [
+    {
+      "company": "CAE USA Mission Solutions Inc",
+      "location": "Orlando, FL",
+      "start": "March 2021",
+      "end": "Current",
+      "position": "Frontend Software Engineer",
+      "responsibilities": [
+        "Designed and mocked up production components using Figma.",
+        "Developed more than a dozen UI components using React and Typescript."
+      ]
+    },
+    {
+      "company": "CAE USA Tampa",
+      "location": "Tampa, FL",
+      "start": "February 2019",
+      "end": "March 2021",
+      "position": "Avionics Software Engineer",
+      "responsibilities": [
+        "Developed new firmware and software baseline for digital C-130 interface display computer units (IDCUs) using C++ and Arduino IDE.",
+        "Performed documentation updates to legacy software baselines to assist new engineers training process."
+      ]
+    },
+    {
+      "company": "CAE USA Tampa",
+      "location": "Tampa, FL",
+      "start": "January 2018",
+      "end": "February 2019",
+      "position": "Integration Specialist",
+      "responsibilities": [
+        "Performed full system integration during the life of a simulator including: cold starting PCs, network integration, code integration, and code testing.",
+        "Provided support to engineers in various departments during their time on site.",
+        "Traveled around the country to deploy simulation systems on multiple military bases and sites."
+      ]
+    },
+    {
+      "company": "CAE USA Tampa",
+      "location": "Tampa, FL",
+      "start": "January 2017",
+      "end": "December 2017",
+      "position": "Software Engineer Co-op",
+      "responsibilities": [
+        "Assisted in the development of a C# application to use flight test data to automate the generation of macros used to initialize the simulation software.",
+        "Refined and ran cold start procedures that effected more than two dozen mission critical simulator laptops."
+      ]
+    },
+    {
+      "company": "CAE USA Tampa",
+      "location": "Tampa, FL",
+      "start": "December 2015",
+      "end": "January 2017",
+      "position": "Technical Writer Co-op",
+      "responsibilities": [
+        "Provided macros and windows scripting to streamline the technical writing department.",
+        "Created instructor guies, maintenance technical manuals, and user handbooks for simulators and trainers."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Git",
+      "icon": "assets/skills/git.png"
+    },
+    {
+      "name": "GitHub",
+      "icon": "assets/skills/github.png"
+    },
+    {
+      "name": "HTML 5",
+      "icon": "assets/skills/HTML5.png"
+    },
+    {
+      "name": "CSS 3",
+      "icon": "assets/skills/CSS3.png"
+    },
+    {
+      "name": "Javascript",
+      "icon": "assets/skills/javascript.png"
+    },
+    {
+      "name": "Typescript",
+      "icon": "assets/skills/typescript.png"
+    },
+    {
+      "name": "React",
+      "icon": "assets/skills/react.png"
+    },
+    {
+      "name": "Redux",
+      "icon": "assets/skills/redux.png"
+    },
+    {
+      "name": "Styled Components",
+      "icon": "assets/skills/styled-components.png"
+    },
+    {
+      "name": "NodeJS",
+      "icon": "assets/skills/nodejs.png"
+    },
+    {
+      "name": "VS Code",
+      "icon": "assets/skills/vscode.png"
+    },
+    {
+      "name": "Figma",
+      "icon": "assets/skills/figma.png"
+    },
+    {
+      "name": "Adobe XD",
+      "icon": "assets/skills/adobe-xd.png"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "icon": "assets/skills/adobe-illustrator.png"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Security+CE",
+      "icon": "assets/skills/security-plus.png"
+    },
+    {
+      "name": "Scaled Agile",
+      "icon": "assets/skills/scaled-agile.png"
+    }
+  ],
+  "interests": [
+    "IoT",
+    "Arduino",
+    "Raspberry Pi",
+    "Robotics",
+    "Drones",
+    "Photography",
+    "Videography",
+    "Traveling",
+    "Hiking"
+  ]
+}
