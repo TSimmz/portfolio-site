@@ -1,18 +1,10 @@
 import * as React from 'react';
-import { Layout, Seo } from 'components/common';
-import { Header } from 'components/theme';
 import { Home } from 'components/landing';
 
 const timeout = 1000;
 // markup
 const HomePage = () => {
-  return (
-    <Layout>
-      <Seo />
-      <Header timeout={timeout} />
-      <Home timeout={timeout} />
-    </Layout>
-  );
+  return <Home timeout={timeout} />;
 };
 
 export default HomePage;
