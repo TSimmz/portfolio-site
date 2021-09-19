@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Tyler Simoni | Portfolio",
+    siteUrl: 'https://tylersimoni.me',
+    title: 'Tyler Simoni | Portfolio',
   },
-  plugins: ["gatsby-plugin-styled-components"],
+  plugins: ['gatsby-plugin-styled-components', 'gatsby-plugin-resolve-src'],
 };

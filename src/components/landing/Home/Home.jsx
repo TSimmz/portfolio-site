@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Wrapper, HeroWrapper, CTA } from './styles';
 import { Button, PageTitle, Divider } from 'components/common';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import { Fade } from '@material-ui/core/';
 
 export const Home = ({ timeout }) => {

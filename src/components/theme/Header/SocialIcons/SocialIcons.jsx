@@ -3,10 +3,10 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Wrapper } from './styles';
 import social from './social.json';
 
-import { ReactComponent as GithubIcon } from 'assets/icons/Github.svg';
-import { ReactComponent as LinkedinIcon } from 'assets/icons/Linkedin.svg';
-import { ReactComponent as InstagramIcon } from 'assets/icons/Instagram.svg';
-import { ReactComponent as TwitterIcon } from 'assets/icons/Twitter.svg';
+import Github from 'assets/icons/Github.svg';
+import Linkedin from 'assets/icons/Linkedin.svg';
+import Instagram from 'assets/icons/Instagram.svg';
+import Twitter from 'assets/icons/Twitter.svg';
 
 const SocialIcons = () => {
   const { theme } = useContext(ThemeContext);
@@ -14,13 +14,13 @@ const SocialIcons = () => {
   const renderIcon = (name) => {
     switch (name) {
       case 'Github':
-        return <GithubIcon />;
+        return <Github />;
       case 'LinkedIn':
-        return <LinkedinIcon />;
+        return <Linkedin />;
       case 'Instagram':
-        return <InstagramIcon />;
+        return <Instagram />;
       case 'Twitter':
-        return <TwitterIcon />;
+        return <Twitter />;
       default:
         return '❓';
     }

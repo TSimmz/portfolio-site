@@ -42,7 +42,7 @@ const NavbarLinks = ({ desktop, activePage, setActivePage }) => {
         onClick={() => handlePageChange('contact')}>
         Contact
       </StyledLink>
-      <SocialIcons />
+      {/* <SocialIcons /> */}
     </Wrapper>
   );
 };
