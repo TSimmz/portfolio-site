@@ -7,42 +7,22 @@ import { Wrapper, StyledLink } from './styles';
 const NavbarLinks = ({ desktop, activePage, setActivePage }) => {
   const { theme } = useContext(ThemeContext);
 
-  const handlePageChange = (page) => {
-    setActivePage(page);
-  };
-
   return (
     <Wrapper theme={theme} desktop={desktop}>
       <ToggleTheme />
-      <StyledLink
-        to='/'
-        theme={theme}
-        activePage={activePage === 'home'}
-        onClick={() => handlePageChange('home')}>
+      <StyledLink to='/' theme={theme}>
         Home
       </StyledLink>
-      <StyledLink
-        to='/about'
-        theme={theme}
-        activePage={activePage === 'about'}
-        onClick={() => handlePageChange('about')}>
+      <StyledLink to='/about' theme={theme}>
         About
       </StyledLink>
-      <StyledLink
-        to='/resume'
-        theme={theme}
-        activePage={activePage === 'resume'}
-        onClick={() => handlePageChange('resume')}>
+      <StyledLink to='/resume' theme={theme}>
         Resume
       </StyledLink>
-      <StyledLink
-        to='/contact'
-        theme={theme}
-        activePage={activePage === 'contact'}
-        onClick={() => handlePageChange('contact')}>
+      <StyledLink to='/contact' theme={theme}>
         Contact
       </StyledLink>
-      {/* <SocialIcons /> */}
+      <SocialIcons />
     </Wrapper>
   );
 };

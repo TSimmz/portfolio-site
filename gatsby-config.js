@@ -3,5 +3,9 @@ module.exports = {
     siteUrl: 'https://tylersimoni.me',
     title: 'Tyler Simoni | Portfolio',
   },
-  plugins: ['gatsby-plugin-styled-components', 'gatsby-plugin-resolve-src'],
+  plugins: [
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-resolve-src',
+    'gatsby-plugin-react-svg',
+  ],
 };

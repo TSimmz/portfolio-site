@@ -12,11 +12,7 @@ const Navbar = ({ timeout, activePage, setActivePage }) => {
   return (
     <Fade timeout={timeout} in={true} mountOnEnter unmountOnExit>
       <Wrapper as={Container} theme={theme}>
-        <NavbarLinks
-          desktop
-          activePage={activePage}
-          setActivePage={setActivePage}
-        />
+        <NavbarLinks desktop />
       </Wrapper>
     </Fade>
   );
