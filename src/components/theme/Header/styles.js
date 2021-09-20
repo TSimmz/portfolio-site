@@ -10,8 +10,6 @@ export const Wrapper = styled.div`
 
   background-color: ${({ theme }) =>
     theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
-  ${({ theme }) =>
-    theme === 'light' ? 'filter: drop-shadow(0px 5px 2px #efefef);' : ''}
 
   transition: 500ms;
 `;

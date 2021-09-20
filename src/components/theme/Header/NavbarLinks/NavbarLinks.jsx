@@ -4,12 +4,12 @@ import SocialIcons from '../SocialIcons/SocialIcons';
 import ToggleTheme from '../ToggleTheme/ToggleTheme';
 import { Wrapper, StyledLink } from './styles';
 
-const NavbarLinks = ({ desktop, activePage, setActivePage }) => {
+const NavbarLinks = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <Wrapper theme={theme} desktop={desktop}>
-      <ToggleTheme />
+      <ToggleTheme desktop={desktop} />
       <StyledLink to='/' theme={theme}>
         Home
       </StyledLink>
@@ -22,7 +22,7 @@ const NavbarLinks = ({ desktop, activePage, setActivePage }) => {
       <StyledLink to='/contact' theme={theme}>
         Contact
       </StyledLink>
-      <SocialIcons />
+      <SocialIcons desktop={desktop} />
     </Wrapper>
   );
 };

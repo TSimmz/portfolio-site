@@ -4,13 +4,13 @@ import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Wrapper = styled.div`
   width: 100%;
+  font-family: 'Bitter', serif;
 
   ${({ desktop }) =>
     desktop
       ? `
-			align-items: center;
 			display: flex;
-			font-family: 'Bitter', serif;
+			align-items: center;
 			font-size: 1.4rem;
 			
 			> button {
@@ -24,24 +24,26 @@ export const Wrapper = styled.div`
 			> a {
 				margin-right: 2.5rem;
 
-				
+
 				&:last-child {
 						margin-right: unset;
 				}
 			}
 		`
       : `
-			padding: 3rem;
+			padding: 1.5rem 1.5rem 1.5rem 1.2rem;
 			display: flex;
 			flex-direction: column;
+			align-items: center;
+
+			> button{ 
+					margin-bottom: 2rem;
+				}
 
 			> a {
-					margin-bottom: 1rem;
-
-					&:last-child {
-							margin-bottom: unset;
-					}
+				margin-bottom: 2rem;
 			}
+
 	`}
 `;
 

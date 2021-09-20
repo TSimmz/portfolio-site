@@ -6,11 +6,22 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 
+  ${({ desktop }) =>
+    desktop
+      ? `
+      flex-direction: row;
+    `
+      : `
+      flex-direction: column;
+    `}
+
   a {
-    margin: 0 0.5rem;
     width: 24px;
     height: 24px;
     transition: filter 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     svg {
       margin: 0;
@@ -24,5 +35,19 @@ export const Wrapper = styled.div`
         transform: scale(1.1);
       }
     }
+
+    ${({ desktop }) =>
+      desktop
+        ? `
+      margin-right: 0.75rem;
+      &:last-child {
+      margin-right: unset;
+    }
+    `
+        : `
+      margin-bottom: 0.75rem;
+      &:last-child {
+        margin-bottom: unset;
+    `}
   }
 `;
