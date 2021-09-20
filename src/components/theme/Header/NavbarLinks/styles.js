@@ -11,8 +11,7 @@ export const Wrapper = styled.div`
 			align-items: center;
 			display: flex;
 			font-family: 'Bitter', serif;
-			font-size: 1.2em;
-
+			font-size: 1.4rem;
 			
 			> button {
 				margin-right: auto;
@@ -23,7 +22,7 @@ export const Wrapper = styled.div`
 			}
 
 			> a {
-				margin: 0 2em;
+				margin-right: 2.5rem;
 
 				
 				&:last-child {
@@ -47,7 +46,6 @@ export const Wrapper = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-  padding-bottom: 0.2rem;
   color: ${({ theme }) =>
     theme === 'light' ? lightTheme.lightColor : darkTheme.lightColor};
   transition: 500ms;
@@ -58,22 +56,4 @@ export const StyledLink = styled(Link)`
       theme === 'light' ? lightTheme.darkColor : darkTheme.hover};
     transform: scale(1.1);
   }
-
-  ${({ activePage, theme }) =>
-    activePage &&
-    theme === 'light' &&
-    `
-		color: ${lightTheme.darkColor};
-		border-bottom: 2px solid ${lightTheme.accent};
-		transform: scale(1.1);
-		`}
-
-  ${({ activePage, theme }) =>
-    activePage &&
-    theme !== 'light' &&
-    `
-		color: ${darkTheme.darkColor};
-		border-bottom: 2px solid ${darkTheme.accent};
-		transform: scale(1.1);
-		`}
 `;
