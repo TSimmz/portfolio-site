@@ -11,5 +11,11 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-react-svg',
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: './src/images/logo.png',
+      },
+    },
   ],
 };
