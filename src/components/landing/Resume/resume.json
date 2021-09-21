@@ -13,7 +13,7 @@
     {
       "company": "CAE USA Mission Solutions Inc",
       "location": "Orlando, FL",
-      "start": "March 2021",
+      "start": "Mar 2021",
       "end": "Current",
       "position": "Frontend Software Engineer",
       "responsibilities": [
@@ -24,8 +24,8 @@
     {
       "company": "CAE USA Tampa",
       "location": "Tampa, FL",
-      "start": "February 2019",
-      "end": "March 2021",
+      "start": "Feb 2019",
+      "end": "Mar 2021",
       "position": "Avionics Software Engineer",
       "responsibilities": [
         "Developed new firmware and software baseline for digital C-130 interface display computer units (IDCUs) using C++ and Arduino IDE.",
@@ -35,8 +35,8 @@
     {
       "company": "CAE USA Tampa",
       "location": "Tampa, FL",
-      "start": "January 2018",
-      "end": "February 2019",
+      "start": "Jan 2018",
+      "end": "Feb 2019",
       "position": "Integration Specialist",
       "responsibilities": [
         "Performed full system integration during the life of a simulator including: cold starting PCs, network integration, code integration, and code testing.",
@@ -47,8 +47,8 @@
     {
       "company": "CAE USA Tampa",
       "location": "Tampa, FL",
-      "start": "January 2017",
-      "end": "December 2017",
+      "start": "Jan 2017",
+      "end": "Dec 2017",
       "position": "Software Engineer Co-op",
       "responsibilities": [
         "Assisted in the development of a C# application to use flight test data to automate the generation of macros used to initialize the simulation software.",
@@ -58,8 +58,8 @@
     {
       "company": "CAE USA Tampa",
       "location": "Tampa, FL",
-      "start": "December 2015",
-      "end": "January 2017",
+      "start": "Dec 2015",
+      "end": "Jan 2017",
       "position": "Technical Writer Co-op",
       "responsibilities": [
         "Provided macros and windows scripting to streamline the technical writing department.",
