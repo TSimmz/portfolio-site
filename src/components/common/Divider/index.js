@@ -5,7 +5,7 @@ export const Divider = styled.div`
   border: 3px solid
     ${({ theme }) => (theme === 'light' ? lightTheme.accent : darkTheme.accent)};
   border-radius: 5px;
-  transition: 500ms;
+  transition: border 500ms;
 
   ${({ vertical }) =>
     vertical &&

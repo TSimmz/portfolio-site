@@ -17,7 +17,7 @@ export const About = ({ timeout }) => {
       <Wrapper theme={theme}>
         <AboutWrapper id='about' theme={theme}>
           <Image theme={theme} src={nyc} alt='times square' />
-          <Divider as={AboutDivider} vertical theme={theme} />
+          <Divider as={AboutDivider} theme={theme} />
           <Details theme={theme}>
             <PageTitle theme={theme} className='margin-bottom'>
               About

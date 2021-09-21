@@ -4,31 +4,37 @@ import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 // Add background-images to this
 export const Wrapper = styled.div`
   width: 100%;
-  height: 85vh;
-  margin: 92px 0px;
+  height: 100vh;
+  padding-top: 60px;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    height: unset;
+    padding-top: 90px;
+  }
 `;
 
 export const AboutWrapper = styled.section`
-  max-width: 55vw;
-  height: 55vh;
-  margin: 0 auto;
-  padding: 0 20px;
-
+  padding: 0 40px;
+  width: 95%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: center;
+  object-fit: contain;
 
-  @media (max-width: 1310px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
   }
 `;
 
 export const AboutDivider = styled.div`
-  @media (max-width: 1310px) {
+  height: clamp(600px, 40vw + 1rem, 65vh);
+  margin: 0 40px;
+
+  @media (max-width: 768px) {
     height: 0;
     width: 100%;
     margin: 20px 0;
@@ -36,17 +42,17 @@ export const AboutDivider = styled.div`
 `;
 
 export const Details = styled.div`
-  flex-shrink: 10;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  width: min(50%, 700px);
 
-  @media (max-width: 1310px) {
+  @media (max-width: 768px) {
     align-items: center;
+    width: 90%;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, -0.0046rem + 3.6697vw, 1.3rem);
     color: ${({ theme }) =>
       theme === 'light' ? lightTheme.darkColor : darkTheme.darkColor};
     transition: 500ms;
@@ -54,17 +60,15 @@ export const Details = styled.div`
 `;
 
 export const Image = styled.img`
-  display: block;
-  max-width: 40%;
+  width: clamp(350px, 30vw + 1rem, 560px);
   object-fit: contain;
   border-radius: 10px;
-  align-self: center;
-
+  margin: 0;
   ${({ theme }) =>
     theme === 'light' ? 'filter: drop-shadow(0px 4px 4px #afafaf);' : ''}
   transition: 500ms;
 
-  @media (max-width: 1310px) {
+  @media (max-width: 768px) {
     max-width: 50%;
   }
 `;
