@@ -8,7 +8,7 @@ import Linkedin from 'assets/icons/Linkedin.svg';
 import Instagram from 'assets/icons/Instagram.svg';
 import Twitter from 'assets/icons/Twitter.svg';
 
-const SocialIcons = () => {
+const SocialIcons = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
 
   const renderIcon = (name) => {
@@ -27,14 +27,14 @@ const SocialIcons = () => {
   };
 
   return (
-    <Wrapper theme={theme}>
+    <Wrapper theme={theme} desktop={desktop}>
       {social.map(({ id, name, link, icon }) => (
         <a
           key={id}
           href={link}
           target='_blank'
           rel='noopener noreferrer'
-          aria-label={`follow me on ${name}`}>
+          aria-label={`Follow me on ${name}`}>
           {renderIcon(name)}
         </a>
       ))}

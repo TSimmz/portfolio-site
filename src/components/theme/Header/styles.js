@@ -7,10 +7,10 @@ export const Wrapper = styled.div`
   z-index: 3;
   background: transparent;
   width: 100%;
+
   background-color: ${({ theme }) =>
     theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
-  ${({ theme }) =>
-    theme === 'light' ? 'filter: drop-shadow(0px 5px 2px #efefef);' : ''}
+
   transition: 500ms;
 `;
 
@@ -20,7 +20,7 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   display: none;
-  transition: 0.4s;
+  transition: 500ms;
 
   ${({ sidebar }) =>
     sidebar &&

@@ -39,19 +39,15 @@ export const Skills = ({ skills, theme }) => {
     if (theme === 'light') {
       return (
         <LightToolTip key={name} title={name} aria-label={name} arrow>
-          <img src={getImage(icon)} alt={name} />
+          <img src={icon} alt={name} />
         </LightToolTip>
       );
     }
     return (
       <DarkToolTip key={name} title={name} aria-label={name} arrow>
-        <img src={getImage(icon)} alt={name} />
+        <img src={icon} alt={name} />
       </DarkToolTip>
     );
-  };
-
-  const getImage = (path) => {
-    return `${process.env.PUBLIC_URL}/` + path;
   };
 
   return (

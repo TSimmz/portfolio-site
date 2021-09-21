@@ -1,6 +1,5 @@
 //import '../../style.css';
 import React, { useContext } from 'react';
-import { Container } from 'components/common';
 import { Wrapper } from './styles';
 import NavbarLinks from '../NavbarLinks/NavbarLinks';
 import { ThemeContext } from 'providers/ThemeProvider';
@@ -11,7 +10,7 @@ const Navbar = ({ timeout, activePage, setActivePage }) => {
 
   return (
     <Fade timeout={timeout} in={true} mountOnEnter unmountOnExit>
-      <Wrapper as={Container} theme={theme}>
+      <Wrapper theme={theme}>
         <NavbarLinks desktop />
       </Wrapper>
     </Fade>

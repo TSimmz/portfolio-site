@@ -31,4 +31,10 @@ export const Wrapper = styled.button`
       transform: scale(1.1);
     }
   }
+
+  ${({ desktop }) =>
+    !desktop &&
+    `
+    align-self: end;
+    margin-right: 0.75rem;`}
 `;

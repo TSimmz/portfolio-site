@@ -4,25 +4,23 @@ import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 // Add background-images to this
 export const Wrapper = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
+  padding-top: 60px;
   display: flex;
   align-items: center;
-  margin-top: 72px;
+  justify-content: center;
 `;
 
 export const HeroWrapper = styled.section`
-  max-width: 55vw;
-  margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 
   display: flex;
   flex-direction: column;
 
-  h4 {
-    font-size: 2rem;
+  h2 {
     font-weight: normal;
     letter-spacing: 1px;
-    margin-top: 28px;
+    margin: 0;
     color: ${({ theme }) =>
       theme === 'light' ? lightTheme.darkColor : darkTheme.darkColor};
     transition: 500ms;
@@ -31,15 +29,16 @@ export const HeroWrapper = styled.section`
 
 export const CTA = styled.button`
   margin-top: 150px;
-  width: 240px;
-  height: 65px;
-  font-size: 30px;
+  width: 12rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
 
   > a {
     display: block;
     height: 100%;
     width: 100%;
-    transform: translateY(20%);
+    padding-top: 0.75rem;
+
     color: ${({ theme }) =>
       theme === 'light' ? lightTheme.darkColor : darkTheme.lightColor};
     transition: 500ms;

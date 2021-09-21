@@ -5,7 +5,7 @@ export const Divider = styled.div`
   border: 3px solid
     ${({ theme }) => (theme === 'light' ? lightTheme.accent : darkTheme.accent)};
   border-radius: 5px;
-  transition: 500ms;
+  transition: border 500ms;
 
   ${({ vertical }) =>
     vertical &&
@@ -18,6 +18,6 @@ export const Divider = styled.div`
     horizontal &&
     `
       width: 100%;
-      margin: 40px 0;
+      margin: 20px 0;
     `}
 `;

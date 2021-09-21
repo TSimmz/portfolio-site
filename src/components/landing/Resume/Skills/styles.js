@@ -29,7 +29,12 @@ export const SkillsContainer = styled.div`
   justify-content: center;
   flex-flow: row wrap;
   align-self: center;
-  padding: 16px 32px;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem;
+
+  @media (max-width: 440px) {
+    padding: unset;
+  }
 `;
 
 export const Skill = styled.div`

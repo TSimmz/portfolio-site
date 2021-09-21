@@ -5,19 +5,24 @@ import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 112px;
+  padding-top: 60px;
 `;
 
 export const ResumeWrapper = styled.section`
   max-width: 1200px;
-  margin: 20px auto;
-  padding: 10px 50px;
+  margin: 30px auto;
+  padding: 0 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: 440px) {
+    margin: 1rem auto;
+    padding: 0 20px;
+  }
+
   h4 {
-    margin: 20px auto 30px;
+    margin: 10px auto 30px;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 1px;
@@ -36,6 +41,9 @@ export const ResumeWrapper = styled.section`
     @media (max-width: 770px) {
       font-size: 1.1rem;
     }
+    @media (max-width: 440px) {
+      font-size: 1rem;
+    }
   }
 
   ul {
@@ -49,6 +57,11 @@ export const ResumeWrapper = styled.section`
     color: ${({ theme }) =>
       theme === 'light' ? lightTheme.darkColor : darkTheme.darkColor};
     transition: 500ms;
+
+    @media (max-width: 440px) {
+      font-size: 0.9rem;
+      margin-left: 10px;
+    }
   }
 `;
 

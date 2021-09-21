@@ -3,7 +3,7 @@ import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Button = styled.button`
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: none;
   padding: 0;
   -webkit-appearance: none;

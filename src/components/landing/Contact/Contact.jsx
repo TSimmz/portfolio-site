@@ -18,8 +18,8 @@ export const Contact = ({ timeout }) => {
           <PageTitle theme={theme} className='center'>
             Contact
           </PageTitle>
+          <Divider as={ContactDivider} theme={theme} />
           <FormWrapper>
-            <Divider as={ContactDivider} vertical theme={theme} />
             <ContactForm />
           </FormWrapper>
         </ContactWrapper>

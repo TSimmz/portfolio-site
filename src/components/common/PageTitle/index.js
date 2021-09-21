@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const PageTitle = styled.h1`
-  font-size: clamp(4rem, 6vw + 1rem, 9rem);
-  letter-spacing: 1.4rem;
+  font-size: clamp(3rem, 1.2857rem + 7.619vw, 9rem);
+  letter-spacing: clamp(0.9rem, 0.7857rem + 0.9524vw, 1.5rem);
   margin: 0;
 
   color: ${({ theme }) =>
@@ -23,7 +23,7 @@ export const PageTitle = styled.h1`
   }
 
   &.margin-bottom {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   &.margin-top {

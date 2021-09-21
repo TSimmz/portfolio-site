@@ -5,8 +5,8 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 6px;
-  margin-bottom: 20px;
-  padding: 0px 40px;
+  margin-bottom: 1.4rem;
+  padding: 0 2.5rem 1rem;
   background-color: ${({ theme }) =>
     theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
   ${({ theme }) =>
@@ -15,6 +15,11 @@ export const Wrapper = styled.div`
       ${({ theme }) =>
     theme === 'light' ? lightTheme.accent : darkTheme.accent};
   transition: 100ms ease-in-out;
+
+  @media (max-width: 440px) {
+    padding: 0 1.3rem 1rem;
+  }
+
   &:hover {
     border: 2px solid
       ${({ theme }) =>
@@ -25,5 +30,9 @@ export const Wrapper = styled.div`
 export const Job = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 2.5rem;
+
+  @media (max-width: 440px) {
+    margin-top: 1rem;
+  }
 `;

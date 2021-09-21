@@ -4,15 +4,14 @@ import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Wrapper = styled.div`
   width: 100%;
+  font-family: 'Bitter', serif;
 
   ${({ desktop }) =>
     desktop
       ? `
-			align-items: center;
 			display: flex;
-			font-family: 'Bitter', serif;
-			font-size: 1.2em;
-
+			align-items: center;
+			font-size: 1.4rem;
 			
 			> button {
 				margin-right: auto;
@@ -23,31 +22,32 @@ export const Wrapper = styled.div`
 			}
 
 			> a {
-				margin: 0 2em;
+				margin-right: 2.5rem;
 
-				
+
 				&:last-child {
 						margin-right: unset;
 				}
 			}
 		`
       : `
-			padding: 3rem;
+			padding: 1.5rem 1.5rem 1.5rem 1.2rem;
 			display: flex;
 			flex-direction: column;
+			align-items: center;
+
+			> button{ 
+					margin-bottom: 2rem;
+				}
 
 			> a {
-					margin-bottom: 1rem;
-
-					&:last-child {
-							margin-bottom: unset;
-					}
+				margin-bottom: 2rem;
 			}
+
 	`}
 `;
 
 export const StyledLink = styled(Link)`
-  padding-bottom: 0.2rem;
   color: ${({ theme }) =>
     theme === 'light' ? lightTheme.lightColor : darkTheme.lightColor};
   transition: 500ms;
@@ -58,22 +58,4 @@ export const StyledLink = styled(Link)`
       theme === 'light' ? lightTheme.darkColor : darkTheme.hover};
     transform: scale(1.1);
   }
-
-  ${({ activePage, theme }) =>
-    activePage &&
-    theme === 'light' &&
-    `
-		color: ${lightTheme.darkColor};
-		border-bottom: 2px solid ${lightTheme.accent};
-		transform: scale(1.1);
-		`}
-
-  ${({ activePage, theme }) =>
-    activePage &&
-    theme !== 'light' &&
-    `
-		color: ${darkTheme.darkColor};
-		border-bottom: 2px solid ${darkTheme.accent};
-		transform: scale(1.1);
-		`}
 `;

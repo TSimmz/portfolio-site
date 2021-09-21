@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Wrapper = styled.div`
   position: fixed;
@@ -9,22 +10,25 @@ export const Wrapper = styled.div`
   width: 0;
   opacity: 0;
   height: 100%;
-  background-color: ${({ theme }) => (theme === "light" ? "#fff" : "#212121")};
+  background-color: ${({ theme }) =>
+    theme === 'light'
+      ? lightTheme.navbarColor + 'fa'
+      : darkTheme.navbarColor + 'f1'};
   transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
 
   ${({ active }) =>
     active &&
     `
-			width: 20%;
+			width: 30%;
 			right: 0px;
 			opacity: 1;
 
 			@media (max-width: 960px) {
-				width: 40%;
+				width: 35%;
 			}
 
 			@media (max-width: 600px) {
-				width: 75%;
+				width: 40%;
 			}
 	`}
 `;
