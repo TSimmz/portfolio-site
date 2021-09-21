@@ -18,6 +18,6 @@ export const Divider = styled.div`
     horizontal &&
     `
       width: 100%;
-      margin: 40px 0;
+      margin: 20px 0;
     `}
 `;

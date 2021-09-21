@@ -17,9 +17,9 @@ export const Home = ({ timeout }) => {
         <HeroWrapper id='home' theme={theme}>
           <PageTitle theme={theme}>Tyler Simoni</PageTitle>
           <Divider horizontal theme={theme} />
-          <h4>
+          <h2>
             I'm a frontend developer and designer based in the Tampa Bay area.
-          </h4>
+          </h2>
           <Button as={CTA} theme={theme}>
             <Link to='/about'>Know more</Link>
           </Button>
