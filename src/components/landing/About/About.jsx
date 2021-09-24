@@ -22,8 +22,8 @@ export const About = ({ timeout }) => {
             <PageTitle theme={theme} className='margin-bottom'>
               About
             </PageTitle>
-            {about.details.map((paragraph) => (
-              <p key={paragraph.slice(0, 10)}>{paragraph}</p>
+            {about.details.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
             ))}
           </Details>
         </AboutWrapper>
