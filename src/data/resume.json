@@ -69,70 +69,78 @@
   ],
   "skills": [
     {
-      "name": "Git",
-      "icon": "assets/skills/git.png"
+      "title": "Git",
+      "logo": "git.png"
     },
     {
-      "name": "GitHub",
-      "icon": "assets/skills/github.png"
+      "title": "GitHub",
+      "logo": "github.png"
     },
     {
-      "name": "HTML 5",
-      "icon": "assets/skills/HTML5.png"
+      "title": "Jira",
+      "logo": "jira.png"
     },
     {
-      "name": "CSS 3",
-      "icon": "assets/skills/CSS3.png"
+      "title": "Confluence",
+      "logo": "confluence.png"
     },
     {
-      "name": "Javascript",
-      "icon": "assets/skills/javascript.png"
+      "title": "HTML 5",
+      "logo": "HTML5.png"
     },
     {
-      "name": "Typescript",
-      "icon": "assets/skills/typescript.png"
+      "title": "CSS 3",
+      "logo": "CSS3.png"
     },
     {
-      "name": "React",
-      "icon": "assets/skills/react.png"
+      "title": "Javascript",
+      "logo": "javascript.png"
     },
     {
-      "name": "Redux",
-      "icon": "assets/skills/redux.png"
+      "title": "Typescript",
+      "logo": "typescript.png"
     },
     {
-      "name": "Styled Components",
-      "icon": "assets/skills/styled-components.png"
+      "title": "React",
+      "logo": "react.png"
     },
     {
-      "name": "NodeJS",
-      "icon": "assets/skills/nodejs.png"
+      "title": "Gatsby",
+      "logo": "gatsby.png"
     },
     {
-      "name": "VS Code",
-      "icon": "assets/skills/vscode.png"
+      "title": "Styled Components",
+      "logo": "styled-components.png"
     },
     {
-      "name": "Figma",
-      "icon": "assets/skills/figma.png"
+      "title": "NodeJS",
+      "logo": "nodejs.png"
     },
     {
-      "name": "Adobe XD",
-      "icon": "assets/skills/adobe-xd.png"
+      "title": "VS Code",
+      "logo": "vscode.png"
     },
     {
-      "name": "Adobe Illustrator",
-      "icon": "assets/skills/adobe-illustrator.png"
+      "title": "Figma",
+      "logo": "figma.png"
+    },
+    {
+      "title": "Adobe XD",
+      "logo": "adobe-xd.png"
+    },
+    {
+      "title": "Adobe Illustrator",
+      "logo": "adobe-illustrator.png"
     }
   ],
   "certifications": [
     {
-      "name": "Security+CE",
-      "icon": "assets/skills/security-plus.png"
+      "title": "Security+CE",
+      "logo": "security-plus.png"
     },
     {
-      "name": "Scaled Agile",
-      "icon": "assets/skills/scaled-agile.png"
+      "title": "Scaled Agile",
+      "logo": "scaled-agile.png"
     }
   ],
   "interests": [

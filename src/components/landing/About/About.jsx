@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Wrapper, AboutWrapper, Details, Image, AboutDivider } from './styles';
 import { Divider, PageTitle } from 'components/common';
-import about from './about.json';
+import about from 'data/about.json';
 import nyc from 'assets/images/nyc.jpg';
 import { Fade } from '@material-ui/core';
 

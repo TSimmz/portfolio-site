@@ -3,12 +3,12 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Wrapper, ResumeWrapper } from './styles';
 import { Divider, PageTitle } from 'components/common';
 import { Fade } from '@material-ui/core';
-import resume from './resume.json';
+import resume from 'data/resume.json';
 import { Education } from './Education/Education';
 import { Experience } from './Experience/Experience';
 import { Skills } from './Skills/Skills';
 
-export const Resume = ({ timeout }) => {
+export const Resume = ({ skillsData, timeout }) => {
   const { theme } = useContext(ThemeContext);
   return (
     <Fade
@@ -24,7 +24,7 @@ export const Resume = ({ timeout }) => {
           <Divider horizontal theme={theme} />
           <Education education={resume.education} theme={theme} />
           <Experience experience={resume.workExperience} theme={theme} />
-          <Skills skills={resume.skills} theme={theme} />
+          <Skills skillsData={skillsData} theme={theme} />
         </ResumeWrapper>
       </Wrapper>
     </Fade>
