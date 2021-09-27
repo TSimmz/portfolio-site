@@ -37,19 +37,23 @@ const DarkToolTip = withStyles(() => ({
 }))(CustomToolTip);
 
 export const Skills = ({ theme }) => {
-  const renderImageWithToolTip = (index, name, src, theme) => {
+  const renderSkillWithToolTip = (index, name, src, theme) => {
     const image = getImage(src);
 
     if (theme === 'light') {
       return (
         <LightToolTip key={index} title={name} aria-label={name} arrow>
-          <GatsbyImage image={image} alt={name} />
+          <Skill key={index} theme={theme}>
+            <GatsbyImage image={image} alt={name} />
+          </Skill>
         </LightToolTip>
       );
     }
     return (
       <DarkToolTip key={index} title={name} aria-label={name} arrow>
-        <GatsbyImage image={image} alt={name} />
+        <Skill key={index} theme={theme}>
+          <GatsbyImage image={image} alt={name} />
+        </Skill>
       </DarkToolTip>
     );
   };
@@ -80,11 +84,9 @@ export const Skills = ({ theme }) => {
           <Wrapper theme={theme}>
             <h4>Skills</h4>
             <SkillsContainer>
-              {skills.map((skill, index) => (
-                <Skill key={index} theme={theme}>
-                  {renderImageWithToolTip(index, skill.title, skill.src, theme)}
-                </Skill>
-              ))}
+              {skills.map((skill, index) =>
+                renderSkillWithToolTip(index, skill.title, skill.src, theme)
+              )}
             </SkillsContainer>
           </Wrapper>
         );
