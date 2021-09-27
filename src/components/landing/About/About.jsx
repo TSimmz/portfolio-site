@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper, AboutWrapper, Details, Image, AboutDivider } from './styles';
+import { Wrapper, AboutWrapper, Details, AboutDivider } from './styles';
 import { Divider, PageTitle } from 'components/common';
 import about from 'data/About/about.json';
-import nyc from 'assets/images/nyc.jpg';
+import { StaticImage } from 'gatsby-plugin-image';
 import { Fade } from '@material-ui/core';
 
 export const About = ({ timeout }) => {
@@ -16,7 +16,14 @@ export const About = ({ timeout }) => {
       unmountOnExit>
       <Wrapper theme={theme}>
         <AboutWrapper id='about' theme={theme}>
-          <Image theme={theme} src={nyc} alt='times square' />
+          <div className='aboutImg'>
+            <StaticImage
+              src='../../../assets/images/nyc.jpg'
+              alt='Tyler in Times Square'
+              placeholder='blurred'
+              layout='constrained'
+            />
+          </div>
           <Divider as={AboutDivider} theme={theme} />
           <Details theme={theme}>
             <PageTitle theme={theme} className='margin-bottom'>

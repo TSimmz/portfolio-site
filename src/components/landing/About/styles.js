@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     height: unset;
     padding-top: 90px;
   }
@@ -24,9 +24,23 @@ export const AboutWrapper = styled.section`
   justify-content: center;
   object-fit: contain;
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .aboutImg {
+    width: clamp(350px, 30vw + 1rem, 560px);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    ${({ theme }) =>
+      theme === 'light' ? 'filter: drop-shadow(0px 4px 4px #afafaf);' : ''}
+    transition: 500ms;
+
+    @media (max-width: 960px) {
+      max-width: 50%;
+    }
   }
 `;
 
@@ -34,7 +48,7 @@ export const AboutDivider = styled.div`
   height: clamp(600px, 40vw + 1rem, 65vh);
   margin: 0 40px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     height: 0;
     width: 100%;
     margin: 20px 0;
@@ -46,7 +60,7 @@ export const Details = styled.div`
   flex-direction: column;
   width: min(50%, 700px);
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     align-items: center;
     width: 90%;
   }
@@ -56,19 +70,5 @@ export const Details = styled.div`
     color: ${({ theme }) =>
       theme === 'light' ? lightTheme.darkColor : darkTheme.darkColor};
     transition: 500ms;
-  }
-`;
-
-export const Image = styled.img`
-  width: clamp(350px, 30vw + 1rem, 560px);
-  object-fit: contain;
-  border-radius: 10px;
-  margin: 0;
-  ${({ theme }) =>
-    theme === 'light' ? 'filter: drop-shadow(0px 4px 4px #afafaf);' : ''}
-  transition: 500ms;
-
-  @media (max-width: 768px) {
-    max-width: 50%;
   }
 `;
