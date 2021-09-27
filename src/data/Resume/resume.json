@@ -70,77 +70,77 @@
   "skills": [
     {
       "title": "Git",
-      "logo": "git.png"
+      "src": "../../assets/skills/git.png"
     },
     {
       "title": "GitHub",
-      "logo": "github.png"
+      "src": "../../assets/skills/github.png"
     },
     {
       "title": "Jira",
-      "logo": "jira.png"
+      "src": "../../assets/skills/jira.png"
     },
     {
       "title": "Confluence",
-      "logo": "confluence.png"
+      "src": "../../assets/skills/confluence.png"
     },
     {
       "title": "HTML 5",
-      "logo": "HTML5.png"
+      "src": "../../assets/skills/HTML5.png"
     },
     {
       "title": "CSS 3",
-      "logo": "CSS3.png"
+      "src": "../../assets/skills/CSS3.png"
     },
     {
       "title": "Javascript",
-      "logo": "javascript.png"
+      "src": "../../assets/skills/javascript.png"
     },
     {
       "title": "Typescript",
-      "logo": "typescript.png"
+      "src": "../../assets/skills/typescript.png"
     },
     {
       "title": "React",
-      "logo": "react.png"
+      "src": "../../assets/skills/react.png"
     },
     {
       "title": "Gatsby",
-      "logo": "gatsby.png"
+      "src": "../../assets/skills/gatsby.png"
     },
     {
       "title": "Styled Components",
-      "logo": "styled-components.png"
+      "src": "../../assets/skills/styled-components.png"
     },
     {
       "title": "NodeJS",
-      "logo": "nodejs.png"
+      "src": "../../assets/skills/nodejs.png"
     },
     {
       "title": "VS Code",
-      "logo": "vscode.png"
+      "src": "../../assets/skills/vscode.png"
     },
     {
       "title": "Figma",
-      "logo": "figma.png"
+      "src": "../../assets/skills/figma.png"
     },
     {
       "title": "Adobe XD",
-      "logo": "adobe-xd.png"
+      "src": "../../assets/skills/adobe-xd.png"
     },
     {
       "title": "Adobe Illustrator",
-      "logo": "adobe-illustrator.png"
+      "src": "../../assets/skills/adobe-illustrator.png"
     }
   ],
   "certifications": [
     {
       "title": "Security+CE",
-      "logo": "security-plus.png"
+      "src": "../../assets/certs/security-plus.png"
     },
     {
       "title": "Scaled Agile",
-      "logo": "scaled-agile.png"
+      "src": "../../assets/certs/scaled-agile.png"
     }
   ],
   "interests": [
