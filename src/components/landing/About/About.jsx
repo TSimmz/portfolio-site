@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper, AboutWrapper, Details, Image, AboutDivider } from './styles';
+import { Wrapper, AboutWrapper, Details, AboutDivider } from './styles';
 import { Divider, PageTitle } from 'components/common';
-import about from './about.json';
-import nyc from 'assets/images/nyc.jpg';
+import about from 'data/About/about.json';
+import { StaticImage } from 'gatsby-plugin-image';
 import { Fade } from '@material-ui/core';
 
 export const About = ({ timeout }) => {
@@ -16,14 +16,21 @@ export const About = ({ timeout }) => {
       unmountOnExit>
       <Wrapper theme={theme}>
         <AboutWrapper id='about' theme={theme}>
-          <Image theme={theme} src={nyc} alt='times square' />
+          <div className='aboutImg'>
+            <StaticImage
+              src='../../../assets/images/nyc.jpg'
+              alt='Tyler in Times Square'
+              placeholder='blurred'
+              layout='constrained'
+            />
+          </div>
           <Divider as={AboutDivider} theme={theme} />
           <Details theme={theme}>
             <PageTitle theme={theme} className='margin-bottom'>
               About
             </PageTitle>
-            {about.details.map((paragraph) => (
-              <p key={paragraph.slice(0, 10)}>{paragraph}</p>
+            {about.details.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
             ))}
           </Details>
         </AboutWrapper>

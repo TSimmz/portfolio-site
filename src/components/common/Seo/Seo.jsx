@@ -12,7 +12,7 @@ import {
   foundingDate,
   logo,
   siteLanguage,
-} from 'data/config';
+} from 'meta/config';
 
 export const Seo = ({
   title = defaultTitle,

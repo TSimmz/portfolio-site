@@ -3,6 +3,8 @@ import { Skill, SkillsContainer, Wrapper } from './styles';
 import { Tooltip } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+import { StaticQuery, graphql } from 'gatsby';
 
 const CustomToolTip = withStyles(() => ({
   tooltip: {
@@ -34,32 +36,61 @@ const DarkToolTip = withStyles(() => ({
   },
 }))(CustomToolTip);
 
-export const Skills = ({ skills, theme }) => {
-  const renderImageWithToolTip = (name, icon, theme) => {
+export const Skills = ({ theme }) => {
+  const renderSkillWithToolTip = (index, name, src, theme) => {
+    const image = getImage(src);
+
     if (theme === 'light') {
       return (
-        <LightToolTip key={name} title={name} aria-label={name} arrow>
-          <img src={icon} alt={name} />
+        <LightToolTip key={index} title={name} aria-label={name} arrow>
+          <Skill key={index} theme={theme}>
+            <GatsbyImage image={image} alt={name} />
+          </Skill>
         </LightToolTip>
       );
     }
     return (
-      <DarkToolTip key={name} title={name} aria-label={name} arrow>
-        <img src={icon} alt={name} />
+      <DarkToolTip key={index} title={name} aria-label={name} arrow>
+        <Skill key={index} theme={theme}>
+          <GatsbyImage image={image} alt={name} />
+        </Skill>
       </DarkToolTip>
     );
   };
 
   return (
-    <Wrapper theme={theme}>
-      <h4>Skills</h4>
-      <SkillsContainer>
-        {skills.map(({ name, icon }) => (
-          <Skill key={name} theme={theme}>
-            {renderImageWithToolTip(name, icon, theme)}
-          </Skill>
-        ))}
-      </SkillsContainer>
-    </Wrapper>
+    <StaticQuery
+      query={graphql`
+        query ResumeSkillsQuery {
+          allResumeJson {
+            edges {
+              node {
+                skills {
+                  title
+                  src {
+                    childImageSharp {
+                      gatsbyImageData(width: 60, placeholder: BLURRED)
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(data) => {
+        const skills = data.allResumeJson.edges[0].node.skills;
+        return (
+          <Wrapper theme={theme}>
+            <h4>Skills</h4>
+            <SkillsContainer>
+              {skills.map((skill, index) =>
+                renderSkillWithToolTip(index, skill.title, skill.src, theme)
+              )}
+            </SkillsContainer>
+          </Wrapper>
+        );
+      }}
+    />
   );
 };

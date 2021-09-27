@@ -69,70 +69,78 @@
   ],
   "skills": [
     {
-      "name": "Git",
-      "icon": "assets/skills/git.png"
+      "title": "Git",
+      "src": "../../assets/skills/git.png"
     },
     {
-      "name": "GitHub",
-      "icon": "assets/skills/github.png"
+      "title": "GitHub",
+      "src": "../../assets/skills/github.png"
     },
     {
-      "name": "HTML 5",
-      "icon": "assets/skills/HTML5.png"
+      "title": "Jira",
+      "src": "../../assets/skills/jira.png"
     },
     {
-      "name": "CSS 3",
-      "icon": "assets/skills/CSS3.png"
+      "title": "Confluence",
+      "src": "../../assets/skills/confluence.png"
     },
     {
-      "name": "Javascript",
-      "icon": "assets/skills/javascript.png"
+      "title": "HTML 5",
+      "src": "../../assets/skills/HTML5.png"
     },
     {
-      "name": "Typescript",
-      "icon": "assets/skills/typescript.png"
+      "title": "CSS 3",
+      "src": "../../assets/skills/CSS3.png"
     },
     {
-      "name": "React",
-      "icon": "assets/skills/react.png"
+      "title": "Javascript",
+      "src": "../../assets/skills/javascript.png"
     },
     {
-      "name": "Redux",
-      "icon": "assets/skills/redux.png"
+      "title": "Typescript",
+      "src": "../../assets/skills/typescript.png"
     },
     {
-      "name": "Styled Components",
-      "icon": "assets/skills/styled-components.png"
+      "title": "React",
+      "src": "../../assets/skills/react.png"
     },
     {
-      "name": "NodeJS",
-      "icon": "assets/skills/nodejs.png"
+      "title": "Gatsby",
+      "src": "../../assets/skills/gatsby.png"
     },
     {
-      "name": "VS Code",
-      "icon": "assets/skills/vscode.png"
+      "title": "Styled Components",
+      "src": "../../assets/skills/styled-components.png"
     },
     {
-      "name": "Figma",
-      "icon": "assets/skills/figma.png"
+      "title": "NodeJS",
+      "src": "../../assets/skills/nodejs.png"
     },
     {
-      "name": "Adobe XD",
-      "icon": "assets/skills/adobe-xd.png"
+      "title": "VS Code",
+      "src": "../../assets/skills/vscode.png"
     },
     {
-      "name": "Adobe Illustrator",
-      "icon": "assets/skills/adobe-illustrator.png"
+      "title": "Figma",
+      "src": "../../assets/skills/figma.png"
+    },
+    {
+      "title": "Adobe XD",
+      "src": "../../assets/skills/adobe-xd.png"
+    },
+    {
+      "title": "Adobe Illustrator",
+      "src": "../../assets/skills/adobe-illustrator.png"
     }
   ],
   "certifications": [
     {
-      "name": "Security+CE",
-      "icon": "assets/skills/security-plus.png"
+      "title": "Security+CE",
+      "src": "../../assets/certs/security-plus.png"
     },
     {
-      "name": "Scaled Agile",
-      "icon": "assets/skills/scaled-agile.png"
+      "title": "Scaled Agile",
+      "src": "../../assets/certs/scaled-agile.png"
     }
   ],
   "interests": [
