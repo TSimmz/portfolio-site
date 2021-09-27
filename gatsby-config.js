@@ -25,9 +25,17 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `skills`,
-        path: path.join(__dirname, `src`, `assets`, `skills`),
+        path: `${__dirname}/src/assets/skills/`,
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `resume`,
+        path: `${__dirname}/src/data/Resume`,
+      },
+    },
   ],
 };
