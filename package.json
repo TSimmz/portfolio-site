@@ -19,6 +19,7 @@
     "babel-plugin-styled-components": "^1.13.2",
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
+    "framer-motion": "^4.1.17",
     "gatsby": "^3.13.1",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^1.14.0",
