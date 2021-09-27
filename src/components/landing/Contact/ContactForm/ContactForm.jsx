@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Formik, Form, FastField, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import Recaptcha from 'react-google-recaptcha';
-import { legalName } from 'data/config';
+import { legalName } from 'meta/config';
 import { Button } from 'components/common';
 import { Error, InputField, Input, Submit } from './styles';
 import { ThemeContext } from 'providers/ThemeProvider';

@@ -7,8 +7,11 @@ export const Experience = ({ experience, theme }) => {
     <Wrapper theme={theme}>
       <h4>Experience</h4>
       {experience.map(
-        ({ company, location, start, end, position, responsibilities }) => (
-          <Job key={start}>
+        (
+          { company, location, start, end, position, responsibilities },
+          index
+        ) => (
+          <Job key={index}>
             <Row italic={false}>
               <p>{company}</p>
               <p>{location}</p>
