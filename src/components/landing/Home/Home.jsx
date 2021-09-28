@@ -36,7 +36,7 @@ export const Home = ({ timeout }) => {
               ease: 'easeIn',
             }}>
             {
-              "> I'm a frontend developer and designer based in the Tampa Bay area"
+              "> I'm a frontend developer and designer based in the Tampa Bay area."
             }
           </motion.h2>
           <motion.div>
@@ -46,7 +46,7 @@ export const Home = ({ timeout }) => {
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{
-                duration: 0.5,
+                duration: 1,
                 ease: 'easeIn',
               }}
               whileHover={{ scale: 1.2 }}
