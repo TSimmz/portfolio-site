@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
+import { motion } from 'framer-motion';
 
 // Add background-images to this
 export const Wrapper = styled.div`
@@ -27,7 +28,7 @@ export const HeroWrapper = styled.section`
   }
 `;
 
-export const CTA = styled.button`
+export const CTA = styled(motion.button)`
   margin-top: 150px;
   width: 12rem;
   height: 3.5rem;
@@ -41,7 +42,7 @@ export const CTA = styled.button`
 
     color: ${({ theme }) =>
       theme === 'light' ? lightTheme.darkColor : darkTheme.lightColor};
-    transition: 500ms;
+    transition: color 500ms;
     &:hover {
       color: #fff;
     }
