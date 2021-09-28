@@ -45,7 +45,7 @@ export const AboutWrapper = styled.section`
 `;
 
 export const AboutDivider = styled.div`
-  height: clamp(600px, 40vw + 1rem, 65vh);
+  height: clamp(600px, 40vw + 1rem, 60vh);
   margin: 0 40px;
 
   @media (max-width: 960px) {
