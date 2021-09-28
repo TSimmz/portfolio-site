@@ -32,7 +32,6 @@ export const Wrapper = styled.div`
       &:hover {
         fill: ${({ theme }) =>
           theme === 'light' ? lightTheme.hover : darkTheme.hover};
-        transform: scale(1.1);
       }
     }
 

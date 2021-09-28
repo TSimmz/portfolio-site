@@ -3,26 +3,48 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import ToggleTheme from '../ToggleTheme/ToggleTheme';
 import { Wrapper, StyledLink } from './styles';
+import { motion } from 'framer-motion';
+
+const navMotionProps = {
+  whileHover: { scale: 1.15 },
+  whileTap: { scale: 0.85 },
+};
 
 const NavbarLinks = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
 
   return (
     <Wrapper theme={theme} desktop={desktop}>
-      <ToggleTheme desktop={desktop} />
+      <ToggleTheme desktop={desktop} navMotionProps={navMotionProps} />
       <StyledLink to='/' theme={theme}>
-        Home
+        <motion.div
+          whileHover={navMotionProps.whileHover}
+          whileTap={navMotionProps.whileTap}>
+          Home
+        </motion.div>
       </StyledLink>
       <StyledLink to='/about' theme={theme}>
-        About
+        <motion.div
+          whileHover={navMotionProps.whileHover}
+          whileTap={navMotionProps.whileTap}>
+          About
+        </motion.div>
       </StyledLink>
       <StyledLink to='/resume' theme={theme}>
-        Resume
+        <motion.div
+          whileHover={navMotionProps.whileHover}
+          whileTap={navMotionProps.whileTap}>
+          Resume
+        </motion.div>
       </StyledLink>
       <StyledLink to='/contact' theme={theme}>
-        Contact
+        <motion.div
+          whileHover={navMotionProps.whileHover}
+          whileTap={navMotionProps.whileTap}>
+          Contact
+        </motion.div>
       </StyledLink>
-      <SocialIcons desktop={desktop} />
+      <SocialIcons desktop={desktop} navMotionProps={navMotionProps} />
     </Wrapper>
   );
 };
