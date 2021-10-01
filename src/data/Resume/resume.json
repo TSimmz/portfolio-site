@@ -11,14 +11,21 @@
   },
   "workExperience": [
     {
+      "clearance": "Active TS Security Clearance",
+      "start": "June 2019"
+    },
+    {
       "company": "CAE USA Mission Solutions Inc",
       "location": "Orlando, FL",
       "start": "Mar 2021",
       "end": "Current",
       "position": "Frontend Software Engineer",
       "responsibilities": [
-        "Designed and mocked up production components using Figma.",
-        "Developed more than a dozen UI components using React and Typescript."
+        "Worked with React TS components, Forms, Events, Router, and Unstated-Typescript.",
+        "Designed and mocked up testable production components using Figma design tool.",
+        "Used URL Search Params to write custom React URL query parameter component to set initial page state and allow view sharing in map-based application.",
+        "Implemented UI React component to convert various coordinate formats such as Decimal Lat/Lon, MGRS, and DMS Lat/Lon.",
+        "Used RESTful API to retrieve data from Unified Data Library for custom plugin for the WebTAK geospatial collaboration platform."
       ]
     },
     {
@@ -28,7 +35,9 @@
       "end": "Mar 2021",
       "position": "Avionics Software Engineer",
       "responsibilities": [
-        "Developed new firmware and software baseline for digital C-130 interface display computer units (IDCUs) using C++ and Arduino IDE.",
+        "Worked with C++, C#, C, and Ada to maintain existing simulator baselines.",
+        "Assisted in the company-wide transition from Waterfall to Agile utilizing SAFe practices such as Program Increment planning and Scrum.",
+        "Developed new software and firmware baseline for updated digital C-130 interface display computer units (IDCUs) using C++ and Arduino IDE.",
         "Performed documentation updates to legacy software baselines to assist new engineers training process."
       ]
     },
@@ -41,7 +50,8 @@
       "responsibilities": [
         "Performed full system integration during the life of a simulator including: cold starting PCs, network integration, code integration, and code testing.",
         "Provided support to engineers in various departments during their time on site.",
-        "Traveled around the country to deploy simulation systems on multiple military bases and sites."
+        "Traveled around the country to deploy simulation systems on multiple military bases and sites.",
+        "Participated in company sponsored Security+ course and received Security+ certification."
       ]
     },
     {
@@ -51,8 +61,9 @@
       "end": "Dec 2017",
       "position": "Software Engineer Co-op",
       "responsibilities": [
+        "Developed using C#, WPF, and MVVM practices.",
         "Assisted in the development of a C# application to use flight test data to automate the generation of macros used to initialize the simulation software.",
-        "Refined and ran cold start procedures that effected more than two dozen mission critical simulator laptops."
+        "Refined and performed cold start procedures that effected more than two dozen mission critical simulator maintenance laptops."
       ]
     },
     {
@@ -63,7 +74,7 @@
       "position": "Technical Writer Co-op",
       "responsibilities": [
         "Provided macros and windows scripting to streamline the technical writing department.",
-        "Created instructor guies, maintenance technical manuals, and user handbooks for simulators and trainers."
+        "Created instructor guides, maintenance technical manuals, and user handbooks for simulators and trainers."
       ]
     }
   ],

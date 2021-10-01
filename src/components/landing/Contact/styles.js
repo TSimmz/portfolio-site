@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 // Add background-images to this
 export const Wrapper = styled.div`
@@ -33,7 +34,7 @@ export const ContactDivider = styled.div`
   }
 `;
 
-export const FormWrapper = styled.div`
+export const FormWrapper = styled(motion.div)`
   display: flex;
   width: min(50%, 730px);
 

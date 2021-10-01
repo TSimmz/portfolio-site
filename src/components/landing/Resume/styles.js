@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
+import { motion } from 'framer-motion';
 
 // Add background-images to this
 export const Wrapper = styled.div`
@@ -63,6 +64,10 @@ export const ResumeWrapper = styled.section`
       margin-left: 10px;
     }
   }
+`;
+
+export const ResumeList = styled(motion.div)`
+  margin: 0.25rem 1rem;
 `;
 
 export const ResumeBody = styled.div`

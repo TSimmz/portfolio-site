@@ -5,6 +5,7 @@ import { Divider, PageTitle } from 'components/common';
 import about from 'data/About/about.json';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Fade } from '@material-ui/core';
+import { motion } from 'framer-motion';
 
 export const About = ({ timeout }) => {
   const { theme } = useContext(ThemeContext);
@@ -16,16 +17,31 @@ export const About = ({ timeout }) => {
       unmountOnExit>
       <Wrapper theme={theme}>
         <AboutWrapper id='about' theme={theme}>
-          <div className='aboutImg'>
+          <motion.div
+            className='aboutImg'
+            initial={{ x: 30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 0.6,
+              ease: 'easeIn',
+            }}>
             <StaticImage
               src='../../../assets/images/nyc.jpg'
               alt='Tyler in Times Square'
               placeholder='blurred'
               layout='constrained'
             />
-          </div>
+          </motion.div>
           <Divider as={AboutDivider} theme={theme} />
-          <Details theme={theme}>
+          <Details
+            as={motion.div}
+            theme={theme}
+            initial={{ x: -30, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              duration: 1,
+              ease: 'easeIn',
+            }}>
             <PageTitle theme={theme} className='margin-bottom'>
               About
             </PageTitle>

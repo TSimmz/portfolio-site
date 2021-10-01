@@ -56,6 +56,5 @@ export const StyledLink = styled(Link)`
   &:hover {
     color: ${({ theme }) =>
       theme === 'light' ? lightTheme.darkColor : darkTheme.hover};
-    transform: scale(1.1);
   }
 `;
