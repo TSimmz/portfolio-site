@@ -12,15 +12,8 @@ export const Wrapper = styled.div`
     theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
   ${({ theme }) =>
     theme === 'light' ? 'filter: drop-shadow(0px 4px 4px #dfdfdf);' : ''}
-  border: 0px solid
-      ${({ theme }) =>
-    theme === 'light' ? lightTheme.accent : darkTheme.accent};
+
   transition: 100ms ease-in-out;
-  &:hover {
-    border: 2px solid
-      ${({ theme }) =>
-        theme === 'light' ? lightTheme.accent : darkTheme.accent};
-  }
 `;
 
 export const SkillsContainer = styled.div`
