@@ -47,6 +47,7 @@ export const Home = ({ timeout }) => {
               animate={{ y: 0, opacity: 1 }}
               transition={{
                 duration: 1,
+                delay: 1,
                 ease: 'easeIn',
               }}
               whileHover={{ scale: 1.2 }}
