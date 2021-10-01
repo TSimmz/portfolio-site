@@ -8,27 +8,48 @@ export const Experience = ({ experience, theme }) => {
       <h4>Experience</h4>
       {experience.map(
         (
-          { company, location, start, end, position, responsibilities },
+          {
+            clearance,
+            company,
+            location,
+            start,
+            end,
+            position,
+            responsibilities,
+          },
           index
-        ) => (
-          <Job key={index}>
-            <Row italic={false}>
-              <p>{company}</p>
-              <p>{location}</p>
-            </Row>
-            <Row italic={true}>
-              <p>{position}</p>
-              <p>
-                {start} - {end}
-              </p>
-            </Row>
-            <ul>
-              {responsibilities.map((task) => (
-                <li>{task}</li>
-              ))}
-            </ul>
-          </Job>
-        )
+        ) => {
+          if (clearance) {
+            return (
+              <Job key={index}>
+                <Row italic={false}>
+                  <p>{clearance}</p>
+                  <p>{start}</p>
+                </Row>
+              </Job>
+            );
+          }
+          return (
+            <Job key={index}>
+              <Row italic={false}>
+                <p>{company}</p>
+                <p>{location}</p>
+              </Row>
+              <Row italic={true}>
+                <p>{position}</p>
+                <p>
+                  {start} - {end}
+                </p>
+              </Row>
+              <ul>
+                {responsibilities &&
+                  responsibilities.map((task, index) => (
+                    <li key={index}>{task}</li>
+                  ))}
+              </ul>
+            </Job>
+          );
+        }
       )}
     </Wrapper>
   );

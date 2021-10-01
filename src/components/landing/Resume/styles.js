@@ -67,7 +67,7 @@ export const ResumeWrapper = styled.section`
 `;
 
 export const ResumeList = styled(motion.div)`
-  margin: 0.25rem 2.3rem;
+  margin: 0.25rem 1rem;
 `;
 
 export const ResumeBody = styled.div`
