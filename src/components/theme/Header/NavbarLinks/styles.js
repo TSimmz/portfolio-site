@@ -30,6 +30,7 @@ export const Wrapper = styled.div`
 			}
 		`
       : `
+			margin-top: 3rem;
 			padding: 1.5rem 1.5rem 1.5rem 1.2rem;
 			display: flex;
 			flex-direction: column;

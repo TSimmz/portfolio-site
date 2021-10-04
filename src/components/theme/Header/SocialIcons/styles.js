@@ -44,6 +44,10 @@ export const Wrapper = styled.div`
     `
         : `
       margin-bottom: 0.75rem;
+
+      &:last-child {
+        margin-bottom: 1.5rem;
+      }
     `}
   }
 `;

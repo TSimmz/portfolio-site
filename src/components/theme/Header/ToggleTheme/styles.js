@@ -31,6 +31,8 @@ export const Wrapper = styled.button`
   ${({ desktop }) =>
     !desktop &&
     `
-    align-self: end;
-    margin-right: 0.75rem;`}
+    align-self: center;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    `}
 `;
