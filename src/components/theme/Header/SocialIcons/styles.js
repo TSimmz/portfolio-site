@@ -39,14 +39,11 @@ export const Wrapper = styled.div`
       desktop
         ? `
       margin-right: 0.75rem;
-      &:last-child {
-      margin-right: unset;
+
     }
     `
         : `
       margin-bottom: 0.75rem;
-      &:last-child {
-        margin-bottom: unset;
     `}
   }
 `;

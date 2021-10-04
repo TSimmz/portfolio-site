@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Wrapper = styled.div`
-  width: 100%;
   font-family: 'Bitter', serif;
 
   ${({ desktop }) =>
