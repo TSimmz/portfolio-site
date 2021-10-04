@@ -23,11 +23,18 @@ const NavbarLinks = ({ desktop }) => {
           Home
         </motion.div>
       </StyledLink>
-      <StyledLink to='/about' theme={theme}>
+      <StyledLink to='/#about' theme={theme}>
         <motion.div
           whileHover={navMotionProps.whileHover}
           whileTap={navMotionProps.whileTap}>
           About
+        </motion.div>
+      </StyledLink>
+      <StyledLink to='/#contact' theme={theme}>
+        <motion.div
+          whileHover={navMotionProps.whileHover}
+          whileTap={navMotionProps.whileTap}>
+          Contact
         </motion.div>
       </StyledLink>
       <StyledLink to='/resume' theme={theme}>
@@ -37,13 +44,7 @@ const NavbarLinks = ({ desktop }) => {
           Resume
         </motion.div>
       </StyledLink>
-      <StyledLink to='/contact' theme={theme}>
-        <motion.div
-          whileHover={navMotionProps.whileHover}
-          whileTap={navMotionProps.whileTap}>
-          Contact
-        </motion.div>
-      </StyledLink>
+
       <SocialIcons desktop={desktop} navMotionProps={navMotionProps} />
     </Wrapper>
   );

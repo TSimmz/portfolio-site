@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 import { Fade } from '@material-ui/core/';
 import { motion } from 'framer-motion';
 
-export const Home = ({ timeout }) => {
+export const Hero = ({ timeout }) => {
   const { theme } = useContext(ThemeContext);
   return (
     <Fade
@@ -36,7 +36,7 @@ export const Home = ({ timeout }) => {
               ease: 'easeIn',
             }}>
             {
-              "> I'm a frontend developer and designer based in the Tampa Bay area."
+              'I am a frontend developer and designer based in the Tampa Bay area.'
             }
           </motion.h2>
           <Button
@@ -51,7 +51,7 @@ export const Home = ({ timeout }) => {
             }}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}>
-            <Link to='/about'>Know more</Link>
+            <Link to='#about'>Know more</Link>
           </Button>
         </HeroWrapper>
       </Wrapper>

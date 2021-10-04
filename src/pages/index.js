@@ -1,10 +1,16 @@
 import * as React from 'react';
-import { Home } from 'components/landing';
+import { Hero, About, Contact } from 'components/landing';
 
 const timeout = 1000;
 // markup
 const HomePage = () => {
-  return <Home timeout={timeout} />;
+  return (
+    <>
+      <Hero timeout={timeout} />
+      <About timeout={timeout} />
+      <Contact timeout={timeout} />
+    </>
+  );
 };
 
 export default HomePage;
