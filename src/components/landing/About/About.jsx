@@ -6,7 +6,7 @@ import about from 'data/About/about.json';
 import { StaticImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 
-export const About = ({ timeout }) => {
+export const About = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <Wrapper theme={theme}>

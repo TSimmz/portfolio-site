@@ -1,53 +1,26 @@
 import React, { useContext } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper, HeroWrapper, CTA } from './styles';
-import { Button, PageTitle, Divider } from 'components/common';
-import { Link } from 'gatsby';
-import { motion } from 'framer-motion';
+import { HeroSection } from './styles';
+import { PageSection, Button, Divider } from 'components/common';
+import ArrowDown from 'assets/icons/arrow-down.svg';
 
-export const Hero = ({ timeout }) => {
+export const Hero = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <Wrapper theme={theme}>
-      <HeroWrapper id='home' theme={theme}>
-        <PageTitle
-          as={motion.h1}
-          theme={theme}
-          initial={{ y: 30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            duration: 1,
-            ease: 'easeIn',
-          }}>
-          Tyler Simoni
-        </PageTitle>
+    <PageSection id='hero' as={HeroSection} theme={theme}>
+      <div className='content-container'>
+        <h2 className='hero-flair'>I'm</h2>
+        <h1 className='hero-title'>Tyler Simoni</h1>
         <Divider horizontal theme={theme} />
-        <motion.h2
-          initial={{ y: -30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            duration: 1,
-            ease: 'easeIn',
-          }}>
-          {
-            'I am a frontend developer and designer based in the Tampa Bay area.'
-          }
-        </motion.h2>
-        <Button
-          as={CTA}
-          theme={theme}
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            duration: 1,
-            delay: 1,
-            ease: 'easeIn',
-          }}
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.9 }}>
-          <Link to='#about'>Know more</Link>
+        <h2 className='tagline'>
+          I'm a frontend developer and designer based in the Tampa Bay area.
+        </h2>
+        <Button className='hero-cta' theme={theme}>
+          <AnchorLink href='#about'>Know more</AnchorLink>
+          <ArrowDown />
         </Button>
-      </HeroWrapper>
-    </Wrapper>
+      </div>
+    </PageSection>
   );
 };

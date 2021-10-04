@@ -8,7 +8,7 @@ import { Experience } from './Experience/Experience';
 import { Skills } from './Skills/Skills';
 import { motion } from 'framer-motion';
 
-export const Resume = ({ timeout }) => {
+export const Resume = () => {
   const { theme } = useContext(ThemeContext);
   const resumeChildDuration = 0.4;
   const resumeChildDelay = resumeChildDuration;

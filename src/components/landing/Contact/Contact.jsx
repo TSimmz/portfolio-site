@@ -5,7 +5,7 @@ import { Divider, PageTitle } from 'components/common';
 import ContactForm from './ContactForm/ContactForm';
 import { motion } from 'framer-motion';
 
-export const Contact = ({ timeout }) => {
+export const Contact = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <Wrapper theme={theme}>

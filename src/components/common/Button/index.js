@@ -2,10 +2,16 @@ import styled from 'styled-components';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Button = styled.button`
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   cursor: pointer;
-  border-radius: 1rem;
   border: none;
-  padding: 0;
+  border-radius: 1rem;
   -webkit-appearance: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -13,7 +19,7 @@ export const Button = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #ffffff;
+
   background: ${({ theme }) =>
     theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
   transition: 500ms;
@@ -23,10 +29,6 @@ export const Button = styled.button`
 
   font-weight: bold;
 
-  &:focus {
-    outline: none;
-  }
-
   &:disabled {
     background: gray;
   }
@@ -35,11 +37,33 @@ export const Button = styled.button`
     color: #ffffff;
     background: ${({ theme }) =>
       theme === 'light' ? lightTheme.accent : darkTheme.accent};
+    transition: 500ms;
   }
 
-  ${({ secondary }) =>
-    secondary &&
-    `
-  background: #001F3F;
-    `}
+  > a {
+    color: ${({ theme }) =>
+      theme === 'light' ? lightTheme.darkColor : darkTheme.lightColor};
+    transition: color 500ms;
+  }
+
+  > svg {
+    width: 21px;
+    margin-left: 1rem;
+
+    > path {
+      fill: ${({ theme }) =>
+        theme === 'light' ? lightTheme.darkColor : darkTheme.lightColor};
+      transition: 500ms;
+    }
+  }
+
+  &:hover > a {
+    color: ${lightTheme.background};
+  }
+
+  &:hover > svg {
+    path {
+      fill: ${lightTheme.background};
+    }
+  }
 `;
