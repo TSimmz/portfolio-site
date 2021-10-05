@@ -7,14 +7,17 @@ export const Error = styled.span`
 `;
 
 export const InputField = styled.div`
-  position: relative;
   margin-bottom: 1rem;
   width: 100%;
 `;
 
 export const Input = styled.input`
   width: 100%;
-  box-sizing: border-box;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 0.875rem 1rem;
+  border-radius: 7px;
+
   color: ${({ theme }) =>
     theme === 'light' ? lightTheme.darkColor : darkTheme.darkColor};
   background-color: ${({ theme }) =>
@@ -22,10 +25,7 @@ export const Input = styled.input`
   border: 2px solid
     ${({ theme }) =>
       theme === 'light' ? lightTheme.lightColor : darkTheme.lightColor};
-  padding: 0.8rem 1rem;
-  border-radius: 7px;
-  margin-bottom: 0.5rem;
-  transition: 0.3s;
+  transition: 500ms;
 
   &:focus {
     border-color: ${({ theme }) =>

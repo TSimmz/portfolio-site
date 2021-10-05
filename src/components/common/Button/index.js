@@ -46,8 +46,14 @@ export const Button = styled.button`
     transition: color 500ms;
   }
 
+  p {
+    color: ${({ theme }) =>
+      theme === 'light' ? lightTheme.darkColor : darkTheme.lightColor};
+    transition: color 500ms;
+  }
+
   > svg {
-    width: 21px;
+    width: 24px;
     margin-left: 1rem;
 
     > path {
@@ -58,6 +64,10 @@ export const Button = styled.button`
   }
 
   &:hover > a {
+    color: ${lightTheme.background};
+  }
+
+  &:hover > p {
     color: ${lightTheme.background};
   }
 

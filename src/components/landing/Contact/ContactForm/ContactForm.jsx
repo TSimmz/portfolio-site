@@ -4,8 +4,9 @@ import * as Yup from 'yup';
 import Recaptcha from 'react-google-recaptcha';
 import { legalName } from 'meta/config';
 import { Button } from 'components/common';
-import { Error, InputField, Input, Submit } from './styles';
+import { Error, InputField, Input } from './styles';
 import { ThemeContext } from 'providers/ThemeProvider';
+import EmailIcon from 'assets/icons/email.svg';
 import * as emailjs from 'emailjs-com';
 
 const ContactForm = () => {
@@ -148,13 +149,9 @@ const ContactForm = () => {
               </h4>
             </InputField>
           )}
-          <Button
-            as={Submit}
-            theme={theme}
-            secondary
-            type='submit'
-            disabled={isSubmitting}>
-            Submit
+          <Button theme={theme} type='submit' disabled={isSubmitting}>
+            <p>Submit</p>
+            <EmailIcon />
           </Button>
         </Form>
       )}
@@ -163,12 +160,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-
-// <EmailJS
-// href='https://www.emailjs.com/'
-// target='_blank'
-// referrerPolicy='no-referrer'
-// theme={theme}>
-// <p>Powered by EmailJS</p>
-// <img src={emailjsLogo} alt='EmailJS logo'></img>
-// </EmailJS>

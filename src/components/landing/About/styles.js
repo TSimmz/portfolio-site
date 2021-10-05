@@ -13,15 +13,17 @@ export const AboutSection = styled.section`
   }
 
   .content-container {
+    margin: 0 3rem;
+    width: 60%;
     max-width: 1150px;
-    flex-grow: 1;
     display: flex;
   }
 
   .art-container {
-    width: 50%;
     display: flex;
     flex-direction: column;
+
+    flex-grow: 1;
 
     h1 {
       font-size: 3rem;
