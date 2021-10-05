@@ -1,49 +1,53 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper, AboutWrapper, Details, AboutDivider } from './styles';
-import { Divider, PageTitle } from 'components/common';
-import about from 'data/About/about.json';
-import { StaticImage } from 'gatsby-plugin-image';
-import { motion } from 'framer-motion';
+import { AboutSection } from './styles';
+import { PageSection } from 'components/common';
+import { AboutCard } from './AboutCard/AboutCard';
+import AboutPerson from 'assets/illustrations/about-person.svg';
+import { StaticQuery, graphql } from 'gatsby';
 
 export const About = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <Wrapper theme={theme}>
-      <AboutWrapper id='about' theme={theme}>
-        <motion.div
-          className='aboutImg'
-          initial={{ x: 30, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 0.6,
-            ease: 'easeIn',
-          }}>
-          <StaticImage
-            src='../../../assets/images/nyc.jpg'
-            alt='Tyler in Times Square'
-            placeholder='blurred'
-            layout='constrained'
-          />
-        </motion.div>
-        <Divider as={AboutDivider} theme={theme} />
-        <Details
-          as={motion.div}
-          theme={theme}
-          initial={{ x: -30, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{
-            duration: 1,
-            ease: 'easeIn',
-          }}>
-          <PageTitle theme={theme} className='margin-bottom'>
-            About
-          </PageTitle>
-          {about.details.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </Details>
-      </AboutWrapper>
-    </Wrapper>
+    <PageSection id='about' as={AboutSection} theme={theme}>
+      <div className='section-background'>
+        <div className='content-container'>
+          <div className='art-container'>
+            <h1>About Me</h1>
+            <AboutPerson />
+          </div>
+          <div className='card-container'>
+            <StaticQuery
+              query={graphql`
+                query AboutQuery {
+                  allAboutJson {
+                    edges {
+                      node {
+                        about {
+                          icon
+                          text
+                          title
+                        }
+                      }
+                    }
+                  }
+                }
+              `}
+              render={(data) => {
+                const about = data.allAboutJson.edges[0].node.about;
+
+                return (
+                  <>
+                    <AboutCard cardContext={about[0]} />
+                    <AboutCard cardContext={about[1]} />
+                    <AboutCard cardContext={about[2]} />
+                  </>
+                );
+              }}
+            />
+          </div>
+        </div>
+      </div>
+    </PageSection>
   );
 };

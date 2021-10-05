@@ -1,8 +1,19 @@
 {
-  "details": [
-    "I graduated from the University of South Florida in December 2017 with a B.S. in Computer Engineering. In college, I spent alot of my free time programming small robotics and microcontrollers.",
-    "I started my professional career at CAE USA Tampa as an Integration Engineer, moved to Avionics systems, before eventually settling as a frontend engineer.",
-    "During the Covid lockdown of 2020, I spent many nights and weekends diving into new technologies and solidifying my technical skills as a developer.",
-    "In my free time, I love to travel, work on my photography and videography, fly my drone, and just relax with my girlfriend, dog, and two rabbits."
+  "about": [
+    {
+      "title": "Education",
+      "text": "I graduated from the University of South Florida in December 2017 with a B.S. in Computer Engineering, focusing in robotics and IoT. I also worked in two co-op roles as a Technical Writer and Software Engineer at CAE.",
+      "icon": "../../assets/icons/education.svg"
+    },
+    {
+      "title": "Professional",
+      "text": "After graduation, I started at CAE USA Tampa as an Integration Specialist, before moving into an Avionics Software Engineer role. In 2020, I decided to learn something totally new and dove into Web Development and React.",
+      "icon": "../../assets/icons/professional.svg"
+    },
+    {
+      "title": "Free Time",
+      "text": "My partner and I enjoy traveling, working on our photography and videography, getting out on our paddle boards,  reading by the pool, and relaxing with our pets, Tori, Binny & Nilly.",
+      "icon": "../../assets/icons/smile.svg"
+    }
   ]
 }

@@ -37,5 +37,12 @@ module.exports = {
         path: `${__dirname}/src/data/Resume`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `about`,
+        path: `${__dirname}/src/data/About`,
+      },
+    },
   ],
 };
