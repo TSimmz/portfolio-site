@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Wrapper = styled.div`
@@ -45,6 +46,18 @@ export const Wrapper = styled.div`
 			}
 
 	`}
+`;
+
+export const StyledAnchorLink = styled(AnchorLink)`
+  color: ${({ theme }) =>
+    theme === 'light' ? lightTheme.lightColor : darkTheme.lightColor};
+  transition: 500ms;
+  text-decoration: none;
+
+  &:hover {
+    color: ${({ theme }) =>
+      theme === 'light' ? lightTheme.darkColor : darkTheme.hover};
+  }
 `;
 
 export const StyledLink = styled(Link)`

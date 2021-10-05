@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import ToggleTheme from '../ToggleTheme/ToggleTheme';
-import { Wrapper, StyledLink } from './styles';
+import { Wrapper, StyledLink, StyledAnchorLink } from './styles';
 import { motion } from 'framer-motion';
 
 const navMotionProps = {
@@ -15,27 +15,27 @@ const NavbarLinks = ({ desktop }) => {
 
   return (
     <Wrapper theme={theme} desktop={desktop}>
-      <StyledLink to='/' theme={theme}>
+      <StyledAnchorLink href='#hero' theme={theme}>
         <motion.div
           whileHover={navMotionProps.whileHover}
           whileTap={navMotionProps.whileTap}>
           Home
         </motion.div>
-      </StyledLink>
-      <StyledLink to='/#about' theme={theme}>
+      </StyledAnchorLink>
+      <StyledAnchorLink href='#about' theme={theme}>
         <motion.div
           whileHover={navMotionProps.whileHover}
           whileTap={navMotionProps.whileTap}>
           About
         </motion.div>
-      </StyledLink>
-      <StyledLink to='/#contact' theme={theme}>
+      </StyledAnchorLink>
+      <StyledAnchorLink href='#contact' theme={theme}>
         <motion.div
           whileHover={navMotionProps.whileHover}
           whileTap={navMotionProps.whileTap}>
           Contact
         </motion.div>
-      </StyledLink>
+      </StyledAnchorLink>
       <StyledLink to='/resume' theme={theme}>
         <motion.div
           whileHover={navMotionProps.whileHover}
