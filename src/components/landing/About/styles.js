@@ -6,7 +6,8 @@ export const AboutSection = styled.section`
     background-color: ${({ theme }) =>
       theme === 'light' ? '#e7e7e7' : '#454545'};
     width: 100%;
-    height: 790px;
+    height: 70vh;
+    max-height: 790px;
     display: grid;
     place-items: center;
     transition: 500ms;
@@ -14,7 +15,7 @@ export const AboutSection = styled.section`
 
   .content-container {
     margin: 0 3rem;
-    width: 60%;
+    width: 80%;
     max-width: 1150px;
     display: flex;
   }
@@ -22,8 +23,6 @@ export const AboutSection = styled.section`
   .art-container {
     display: flex;
     flex-direction: column;
-
-    flex-grow: 1;
 
     h1 {
       font-size: 3rem;
@@ -35,10 +34,13 @@ export const AboutSection = styled.section`
         theme === 'light' ? lightTheme.darkColor : darkTheme.darkColor};
       transition: 500ms;
     }
+
+    svg {
+      width: 100%;
+    }
   }
 
   .card-container {
-    flex-grow: 2;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Card = styled.div`
-  min-width: 300px;
-  width: 300px;
-  height: 290px;
+  min-width: 250px;
+  width: 275px;
+  height: 250px;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1.5rem;
+  margin: 1rem;
   position: relative;
-  margin: 1.5rem;
   background-color: ${({ theme }) =>
     theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
   transition: 500ms;
@@ -59,7 +59,7 @@ export const Card = styled.div`
   }
 
   .card-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: normal;
     color: #c7c7c7;
     line-height: 1.1rem;

@@ -39,6 +39,10 @@ export const ContactSection = styled.section`
     display: grid;
     place-items: center;
     padding: 1rem;
+
+    svg {
+      width: 100%;
+    }
   }
 
   #email,
