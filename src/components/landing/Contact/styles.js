@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const ContactSection = styled.section`
+  height: 90vh;
   .section-background {
     background-color: ${({ theme }) =>
       theme === 'light' ? '#e7e7e7' : '#454545'};
