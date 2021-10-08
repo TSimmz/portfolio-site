@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const Card = styled.div`
-  min-width: 250px;
   width: 275px;
   height: 250px;
   border-radius: 1rem;
@@ -14,21 +13,21 @@ export const Card = styled.div`
   transition: 500ms;
 
   .image-border {
-    width: 70px;
-    height: 70px;
+    width: 22%;
+    top: calc(-1 * (22% / 2));
+    aspect-ratio: 1;
     background-color: ${({ theme }) =>
       theme === 'light' ? '#e7e7e7' : '#454545'};
     border-radius: 50%;
     position: absolute;
-    top: calc(-1 * 70px / 2);
     display: grid;
     place-items: center;
     transition: 500ms;
   }
 
   .image-background {
-    width: 60px;
-    height: 60px;
+    width: 85%;
+    aspect-ratio: 1;
     background-color: ${({ theme }) =>
       theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
     border-radius: 50%;
@@ -38,8 +37,8 @@ export const Card = styled.div`
   }
 
   .card-icon {
-    width: 42px;
-    height: 42px;
+    width: 70%;
+    aspect-ratio: 1;
 
     path {
       fill: ${({ theme }) =>

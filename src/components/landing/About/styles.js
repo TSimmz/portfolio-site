@@ -7,7 +7,6 @@ export const AboutSection = styled.section`
       theme === 'light' ? '#e7e7e7' : '#454545'};
     width: 100%;
     height: 70vh;
-    max-height: 790px;
     display: grid;
     place-items: center;
     transition: 500ms;
@@ -17,7 +16,8 @@ export const AboutSection = styled.section`
     margin: 0 3rem;
     width: 80%;
     max-width: 1150px;
-    display: flex;
+    display: grid;
+    grid-template-areas: 'art cards';
   }
 
   .art-container {
