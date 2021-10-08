@@ -13,7 +13,7 @@ export const Layout = ({ children }) => {
       <Global theme={theme} />
       <Seo />
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
     </>
   );

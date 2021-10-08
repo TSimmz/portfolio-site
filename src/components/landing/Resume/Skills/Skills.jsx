@@ -59,38 +59,8 @@ export const Skills = ({ theme }) => {
   };
 
   return (
-    <StaticQuery
-      query={graphql`
-        query ResumeSkillsQuery {
-          allResumeJson {
-            edges {
-              node {
-                skills {
-                  title
-                  src {
-                    childImageSharp {
-                      gatsbyImageData(width: 60, placeholder: BLURRED)
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      `}
-      render={(data) => {
-        const skills = data.allResumeJson.edges[0].node.skills;
-        return (
-          <Wrapper theme={theme}>
-            <h4>Skills</h4>
-            <SkillsContainer>
-              {skills.map((skill, index) =>
-                renderSkillWithToolTip(index, skill.title, skill.src, theme)
-              )}
-            </SkillsContainer>
-          </Wrapper>
-        );
-      }}
-    />
+    <Wrapper theme={theme}>
+      <h4>Skills</h4>
+    </Wrapper>
   );
 };
