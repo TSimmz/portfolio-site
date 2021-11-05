@@ -8,7 +8,6 @@ const ResumePage = ({ data }) => {
   const education = resumeData.education;
   const workExperience = resumeData.workExperience;
 
-  console.log(skills.general);
   return (
     <Resume
       skills={skills}

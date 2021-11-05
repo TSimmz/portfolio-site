@@ -6,7 +6,7 @@
   "education": {
     "school": "University of South Florida",
     "degree": "B.S. in Computer Engineering",
-    "location": "Tampa, FL",
+    "location": "Tampa, Florida",
     "graduation": "December 2017"
   },
   "workExperience": [
@@ -61,10 +61,10 @@
         "title": "GitHub",
         "src": "../../assets/skills/github.png"
       },
-    {
-      "title": "SAFe 5",
-      "src": "../../assets/skills/sp_small.png"
-    },
+      {
+        "title": "SAFe 5",
+        "src": "../../assets/skills/sp_small.png"
+      },
       {
         "title": "Jira",
         "src": "../../assets/skills/jira.png"
@@ -99,10 +99,10 @@
         "title": "React",
         "src": "../../assets/skills/react.png"
       },
-    {
-      "title": "Redux",
-      "src": "../../assets/skills/redux.png"
-    },
+      {
+        "title": "Redux",
+        "src": "../../assets/skills/redux.png"
+      },
       {
         "title": "Gatsby",
         "src": "../../assets/skills/gatsby.png"

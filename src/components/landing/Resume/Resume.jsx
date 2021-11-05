@@ -5,9 +5,13 @@ import { ResumeSection, DownloadButton, SkillBubble } from './styles';
 // import { Experience } from './Experience/Experience';
 // import { Skills } from './Skills/Skills';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
+// Illustrations
 import HeaderWave from 'assets/illustrations/header-waves.svg';
+import MidWaves from 'assets/illustrations/mid-waves.svg';
 import DownloadArrow from 'assets/icons/download-arrow.svg';
 import DevPerson from 'assets/illustrations/dev-person.svg';
+import EduPerson from 'assets/illustrations/education-person.svg';
 
 export const Resume = ({ skills, education, workExperience }) => {
   const { theme } = useContext(ThemeContext);
@@ -66,7 +70,18 @@ export const Resume = ({ skills, education, workExperience }) => {
           </div>
         </div>
       </section>
-      <section className='education-section'></section>
+      <MidWaves className='mid-waves' />
+      <section className='education-section'>
+        <div className='education'>
+          <h2 className='edu-school'>{education.school}</h2>
+          <h3 className='edu-location'>{education.location}</h3>
+          <h3 className='edu-degree'>{education.degree}</h3>
+          <h4 className='edu-graduation'>{education.graduation}</h4>
+        </div>
+        <div className='education-illustration'>
+          <EduPerson />
+        </div>
+      </section>
       <section className='experience-section'></section>
     </ResumeSection>
   );

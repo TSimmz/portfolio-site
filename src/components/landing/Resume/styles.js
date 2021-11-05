@@ -27,6 +27,12 @@ export const ResumeSection = styled.section`
     transition: 500ms;
   }
 
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .skills-section {
     padding: 1rem;
     grid-column: 4 / 10;
@@ -71,6 +77,58 @@ export const ResumeSection = styled.section`
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+    }
+  }
+
+  .mid-waves {
+    grid-column: 1 / -1;
+    grid-row: 13 / 17;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .education-section {
+    grid-column: 4 / 10;
+    grid-row: 11 / 17;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+
+    color: ${({ theme }) =>
+      theme === 'light' ? lightTheme.darkColor : darkTheme.darkColor};
+
+    .education {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .edu-school {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .edu-location {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .edu-degree {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 0.5rem;
+      }
+      .edu-graduation {
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+    }
+
+    .education-illustration {
     }
   }
 `;
