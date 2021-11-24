@@ -131,6 +131,45 @@ export const ResumeSection = styled.section`
     .education-illustration {
     }
   }
+
+  .experience-section {
+    padding: 1rem;
+    grid-column: 4 / 10;
+    grid-row: 20 / 26;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+
+    gap: 1rem;
+
+    .work-card {
+      padding: 1.5rem;
+      width: 400px;
+      height: 290px;
+      border-radius: 1rem;
+      background-color: ${({ theme }) =>
+        theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: flex-start;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        margin-bottom: 3rem;
+      }
+
+      svg {
+        align-self: flex-end;
+        margin-top: auto;
+      }
+    }
+  }
 `;
 
 export const DownloadButton = styled.button`

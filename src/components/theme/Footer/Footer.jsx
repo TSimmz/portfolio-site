@@ -36,7 +36,7 @@ export const Footer = () => {
       </span>
       <span className='divider'> | </span>
       <span>
-        hosted by
+        illustrations by
         <a href='https://undraw.co/' target='_blank' rel='noreferrer'>
           {' '}
           unDraw

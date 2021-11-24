@@ -12,6 +12,7 @@ import MidWaves from 'assets/illustrations/mid-waves.svg';
 import DownloadArrow from 'assets/icons/download-arrow.svg';
 import DevPerson from 'assets/illustrations/dev-person.svg';
 import EduPerson from 'assets/illustrations/education-person.svg';
+import FlipArrow from 'assets/icons/flip-arrow.svg';
 
 export const Resume = ({ skills, education, workExperience }) => {
   const { theme } = useContext(ThemeContext);
@@ -82,7 +83,24 @@ export const Resume = ({ skills, education, workExperience }) => {
           <EduPerson />
         </div>
       </section>
-      <section className='experience-section'></section>
+      <section className='experience-section'>
+        {workExperience.map((work) => {
+          if (!work.clearance) {
+            return (
+              <div key={work.position} className='work-card'>
+                <h3>{work.company}</h3>
+                <h4>{work.position}</h4>
+                <p>{work.location}</p>
+                <p>
+                  {work.start} - {work.end}
+                </p>
+                <FlipArrow />
+              </div>
+            );
+          }
+          return undefined;
+        })}
+      </section>
     </ResumeSection>
   );
 };
