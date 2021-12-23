@@ -3,6 +3,7 @@ import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const HeroSection = styled.section`
   padding-top: 60px;
+  height: 100vh;
 
   .content-container {
     width: 60%;
