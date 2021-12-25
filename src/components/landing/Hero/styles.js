@@ -4,6 +4,8 @@ import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 export const HeroSection = styled.section`
   padding-top: 60px;
   height: 100vh;
+  display: grid;
+  place-items: center;
 
   .content-container {
     margin: 0 2rem;
