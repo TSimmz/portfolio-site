@@ -10,7 +10,6 @@ export const Hero = () => {
   return (
     <PageSection id='hero' as={HeroSection} theme={theme}>
       <div className='content-container'>
-        <h2 className='hero-flair'>I'm</h2>
         <h1 className='hero-title'>Tyler Simoni</h1>
         <Divider horizontal theme={theme} />
         <h2 className='tagline'>
