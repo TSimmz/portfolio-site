@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { lightTheme, darkTheme } from 'providers/ThemeProvider';
 
 export const ContactSection = styled.section`
-  height: 90vh;
+  display: flex;
+  justify-content: center;
+
   .section-background {
     background-color: ${({ theme }) =>
       theme === 'light' ? '#e7e7e7' : '#454545'};
@@ -14,34 +16,27 @@ export const ContactSection = styled.section`
   }
 
   .content-container {
-    margin: 0 3rem;
-    width: 60%;
-    max-width: 1150px;
+    margin: 0 2.6rem;
+    padding: 2.25rem 0;
     display: flex;
-    justify-content: space-between;
-  }
+    flex-direction: column;
+    align-items: center;
 
-  .form-container {
-    width: 41%;
+    > svg {
+      width: 100%;
+      height: 240px;
+    }
 
     h1 {
       font-size: 3rem;
       margin-bottom: 3rem;
-      text-align: left;
 
       color: ${({ theme }) =>
         theme === 'light' ? lightTheme.darkColor : darkTheme.darkColor};
       transition: 500ms;
     }
-  }
 
-  .art-container {
-    width: 50%;
-    display: grid;
-    place-items: center;
-    padding: 1rem;
-
-    svg {
+    > form {
       width: 100%;
     }
   }

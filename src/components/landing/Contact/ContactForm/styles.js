@@ -9,10 +9,15 @@ export const Error = styled.span`
 export const InputField = styled.div`
   margin-bottom: 1rem;
   width: 100%;
+
+  #message {
+    height: 340px;
+  }
 `;
 
 export const Input = styled.input`
   width: 100%;
+  height: 45px;
   font-size: 1.125rem;
   font-weight: bold;
   padding: 0.875rem 1rem;

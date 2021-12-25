@@ -9,7 +9,7 @@ export const FooterWrapper = styled.footer`
   justify-content: center;
   width: 100%;
   height: 3rem;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1rem;
   padding: 0 rem;
   color: ${({ theme }) =>

@@ -9,16 +9,10 @@ export const Contact = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <PageSection id='contact' as={ContactSection} theme={theme}>
-      <div className='section-background'>
-        <div className='content-container'>
-          <div className='form-container'>
-            <h1>Contact Me</h1>
-            <ContactForm />
-          </div>
-          <div className='art-container'>
-            <EmailPerson />
-          </div>
-        </div>
+      <div className='content-container'>
+        <EmailPerson />
+        <h1>Contact Me</h1>
+        <ContactForm />
       </div>
     </PageSection>
   );
