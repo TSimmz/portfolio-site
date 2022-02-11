@@ -35,18 +35,17 @@ export const Resume = ({ timeout }) => {
           </PageTitle>
           <Divider horizontal theme={theme} />
           <ResumeList
-            key={'education'}
+            key={'skills'}
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
               duration: resumeChildDuration,
               ease: 'easeIn',
-              delay: resumeChildDelay * 2,
             }}>
-            <Education education={resume.education} theme={theme} />
+            <Skills theme={theme} />
           </ResumeList>
           <ResumeList
-            key={'education'}
+            key={'experience'}
             initial={{ y: -50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
@@ -63,8 +62,9 @@ export const Resume = ({ timeout }) => {
             transition={{
               duration: resumeChildDuration,
               ease: 'easeIn',
+              delay: resumeChildDelay * 2,
             }}>
-            <Skills theme={theme} />
+            <Education education={resume.education} theme={theme} />
           </ResumeList>
         </ResumeWrapper>
       </Wrapper>
