@@ -7,13 +7,17 @@ export const Wrapper = styled.div`
   flex-direction: column;
   border-radius: 6px;
   margin-bottom: 20px;
-  padding: 0px 40px;
+  padding: 20px 40px 0px;
   background-color: ${({ theme }) =>
     theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
   ${({ theme }) =>
     theme === 'light' ? 'filter: drop-shadow(0px 4px 4px #dfdfdf);' : ''}
 
   transition: 100ms ease-in-out;
+
+  h4 {
+    margin-bottom: 0px;
+  }
 `;
 
 export const SkillsContainer = styled.div`

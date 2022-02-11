@@ -27,7 +27,7 @@ export const About = ({ timeout }) => {
             }}>
             <StaticImage
               src='../../../assets/images/nyc.jpg'
-              alt='Tyler in Times Square'
+              alt='Tyler and Rachel in Times Square'
               placeholder='blurred'
               layout='constrained'
             />

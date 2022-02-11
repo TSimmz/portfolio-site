@@ -1,6 +1,6 @@
 {
   "name": "Tyler Simoni",
-  "location": "St Petersburg, FL",
+  "location": "Knoxville, TN",
   "phone": "724.372.9354",
   "email": "tyler.simoni.8@gmail.com",
   "education": {
@@ -15,10 +15,22 @@
       "start": "June 2019"
     },
     {
-      "company": "CAE USA Mission Solutions Inc",
-      "location": "Orlando, FL",
-      "start": "Jan 2018",
+      "company": "GovernmentCIO",
+      "location": "Washington, DC (Remote)",
+      "start": "Dec 2021",
       "end": "Current",
+      "position": "Frontend Software Engineer",
+      "responsibilities": [
+        "Maintained all search related functionality for the VA.gov that is used by 6-10 million users per month.",
+        "Implemented Medallia as a feedback tool to collect data from users and veterans.",
+        "Utilized TinyLiquid as a templating engine for static content display."
+      ]
+    },
+    {
+      "company": "CAE USA Mission Solutions Inc",
+      "location": "Orlando, FL (Remote)",
+      "start": "Jan 2018",
+      "end": "Dec 2021",
       "position": "Frontend Software Engineer",
       "responsibilities": [
         "Worked with React Typescript components, Forms, Events, Router, and Unstated-Typescript.",

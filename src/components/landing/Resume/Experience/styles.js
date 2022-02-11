@@ -6,13 +6,17 @@ export const Wrapper = styled.div`
   flex-direction: column;
   border-radius: 6px;
   margin-bottom: 1.4rem;
-  padding: 0 2.5rem 1rem;
+  padding: 1.3rem 2.5rem 1rem;
   background-color: ${({ theme }) =>
     theme === 'light' ? lightTheme.navbarColor : darkTheme.navbarColor};
   ${({ theme }) =>
     theme === 'light' ? 'filter: drop-shadow(0px 4px 4px #dfdfdf);' : ''}
 
   transition: 100ms ease-in-out;
+
+  h4 {
+    margin-bottom: 0px;
+  }
 
   @media (max-width: 440px) {
     padding: 0 1.3rem 1rem;
