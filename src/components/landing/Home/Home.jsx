@@ -35,9 +35,7 @@ export const Home = ({ timeout }) => {
               duration: 1,
               ease: 'easeIn',
             }}>
-            {
-              "> I'm a frontend developer and designer based in the Tampa Bay area."
-            }
+            {"> I'm a frontend developer and designer based in Knoxville, TN"}
           </motion.h2>
           <Button
             as={CTA}
