@@ -31,10 +31,10 @@ module.exports = {
   },
 
   address: {
-    city: 'North Redington Beach',
-    region: 'Florida',
+    city: 'Knoxville',
+    region: 'Tennessee',
     country: 'United States',
-    zipCode: '33708',
+    zipCode: '37915',
   },
 
   contact: {
