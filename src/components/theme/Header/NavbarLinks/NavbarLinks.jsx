@@ -15,7 +15,6 @@ const NavbarLinks = ({ desktop }) => {
 
   return (
     <Wrapper theme={theme} desktop={desktop}>
-      <ToggleTheme desktop={desktop} navMotionProps={navMotionProps} />
       <StyledLink to='/' theme={theme}>
         <motion.div
           whileHover={navMotionProps.whileHover}
@@ -45,6 +44,7 @@ const NavbarLinks = ({ desktop }) => {
         </motion.div>
       </StyledLink>
       <SocialIcons desktop={desktop} navMotionProps={navMotionProps} />
+      <ToggleTheme desktop={desktop} navMotionProps={navMotionProps} />
     </Wrapper>
   );
 };
