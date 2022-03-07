@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper, ResumeWrapper, ResumeList } from './styles';
+import { Wrapper, ResumeWrapper, ResumeList, DownloadButton } from './styles';
 import { Divider, PageTitle } from 'components/common';
 import { Fade } from '@material-ui/core';
 import resume from 'data/Resume/resume.json';
@@ -8,6 +8,8 @@ import { Education } from './Education/Education';
 import { Experience } from './Experience/Experience';
 import { Skills } from './Skills/Skills';
 import { motion } from 'framer-motion';
+import DownloadArrow from 'assets/icons/download-arrow.svg';
+import resumePdf from 'data/Resume/Tyler-Simoni-Resume.pdf';
 
 export const Resume = ({ timeout }) => {
   const { theme } = useContext(ThemeContext);
@@ -21,6 +23,14 @@ export const Resume = ({ timeout }) => {
       unmountOnExit>
       <Wrapper theme={theme}>
         <ResumeWrapper id='resume' theme={theme}>
+          <DownloadButton
+            href={resumePdf}
+            target='_blank'
+            aria-label='download Resume button'
+            theme={theme}>
+            <p>Download</p>
+            <DownloadArrow />
+          </DownloadButton>
           <PageTitle
             as={motion.h1}
             className='center'

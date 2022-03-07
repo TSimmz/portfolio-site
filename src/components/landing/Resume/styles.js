@@ -79,6 +79,57 @@ export const ResumeBody = styled.div`
   }
 `;
 
+export const DownloadButton = styled(motion.a)`
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0.5rem;
+
+  position: fixed;
+  top: 5rem;
+  right: -135px;
+  z-index: 3;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  background: ${({ theme }) =>
+    theme === 'light' ? lightTheme.accent : darkTheme.accent};
+
+  transition: 250ms;
+
+  :hover,
+  :active {
+    right: 0;
+    outline: solid 3px
+      ${({ theme }) =>
+        theme === 'light' ? lightTheme.accent : darkTheme.darkColor};
+    outline-offset: 3px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: ${({ theme }) =>
+      theme === 'light' ? lightTheme.background : darkTheme.darkColor};
+  }
+
+  svg {
+    margin-left: 0.5rem;
+    width: 30px;
+    aspect-ratio: 1;
+  }
+
+  path {
+    fill: #fff;
+  }
+`;
+
 export const Column = styled.div`
   flex: 1;
   margin: 0px 30px;

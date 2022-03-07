@@ -22,8 +22,8 @@
       "position": "Frontend Software Engineer",
       "responsibilities": [
         "Maintained all search related functionality for the VA.gov that is used by 6-10 million users per month.",
-        "Implemented Medallia as a feedback tool to collect data from users and veterans.",
-        "Utilized TinyLiquid as a templating engine for static content display."
+        "Updated and maintained multiple React/Redux apps for VA.gov.",
+        "Created, merged, and peer reviewed pull requests to multiple open-source repositories supporting VA.gov."
       ]
     },
     {
