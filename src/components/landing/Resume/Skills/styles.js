@@ -51,6 +51,10 @@ export const Skill = styled.div`
     transform: scale(1.1);
   }
 
+  @media (max-width: 440px) {
+    margin: 5px;
+  }
+
   img {
     object-fit: contain;
     margin: 0;

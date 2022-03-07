@@ -34,3 +34,4 @@ export const Wrapper = styled.div`
     width: 175px;
     letter-spacing: 0.1rem;
   }
+`;
