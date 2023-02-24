@@ -65,10 +65,11 @@ export const Skills = ({ theme }) => {
             <SkillsContainer>
               {skills.map((skill) => {
                 const image = getImage(skill.src);
+                console.log('Skill', skill);
                 return (
-                  <Skill key={skill.name} theme={theme}>
-                    <GatsbyImage image={image} alt={skill.name} />
-                    <p>{skill.name}</p>
+                  <Skill key={skill.title} theme={theme}>
+                    <GatsbyImage image={image} alt={skill.title} />
+                    <p>{skill.title}</p>
                   </Skill>
                 );
               })}
