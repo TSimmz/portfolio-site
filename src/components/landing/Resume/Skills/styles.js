@@ -39,7 +39,7 @@ export const Skill = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 80px;
-  height: 80px;
+  height: 122px;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -61,5 +61,13 @@ export const Skill = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  p {
+    margin: 0;
+    margin-top: .5rem;
+    min-width: 100%;
+    font-size: 12px;
+    text-align: center;
   }
 `;
