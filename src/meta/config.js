@@ -6,9 +6,10 @@ module.exports = {
 
   author: 'Tyler Simoni',
   legalName: 'Tyler Simoni',
-  url: 'https://tylersimoni.me',
+  url: 'https://tylersimoni.com',
 
-  defaultDescription: 'I’m Tyler and I’m a Frontend developer and designer!',
+  defaultDescription:
+    'I’m Tyler Simoni and I’m a Frontend developer and designer!',
 
   siteImage: 'preview.jpg',
   siteLanguage: 'en',
@@ -34,7 +35,7 @@ module.exports = {
     city: 'Knoxville',
     region: 'Tennessee',
     country: 'United States',
-    zipCode: '37915',
+    zipCode: '37920',
   },
 
   contact: {

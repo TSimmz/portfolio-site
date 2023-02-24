@@ -65,26 +65,6 @@
   ],
   "skills": [
     {
-      "title": "Git",
-      "src": "../../assets/skills/git.png"
-    },
-    {
-      "title": "GitHub",
-      "src": "../../assets/skills/github.png"
-    },
-    {
-      "title": "SAFe 5",
-      "src": "../../assets/skills/sp_small.png"
-    },
-    {
-      "title": "Jira",
-      "src": "../../assets/skills/jira.png"
-    },
-    {
-      "title": "Confluence",
-      "src": "../../assets/skills/confluence.png"
-    },
-    {
       "title": "HTML 5",
       "src": "../../assets/skills/HTML5.png"
     },
@@ -105,12 +85,20 @@
       "src": "../../assets/skills/react.png"
     },
     {
+      "title": "NextJS",
+      "src": "../../assets/skills/nextjs.png"
+    },
+    {
+      "title": "GatsbyJS",
+      "src": "../../assets/skills/gatsby.png"
+    },
+    {
       "title": "Redux",
       "src": "../../assets/skills/redux.png"
     },
     {
-      "title": "Gatsby",
-      "src": "../../assets/skills/gatsby.png"
+      "title": "MantineUI",
+      "src": "../../assets/skills/mantine-ui.png"
     },
     {
       "title": "Styled Components",
@@ -121,8 +109,40 @@
       "src": "../../assets/skills/nodejs.png"
     },
     {
+      "title": "tRPC",
+      "src": "../../assets/skills/trpc.png"
+    },
+    {
+      "title": "Prisma",
+      "src": "../../assets/skills/prisma.png"
+    },
+    {
+      "title": "MongoDB",
+      "src": "../../assets/skills/mongodb.png"
+    },
+    {
       "title": "VS Code",
       "src": "../../assets/skills/vscode.png"
+    },
+    {
+      "title": "Git",
+      "src": "../../assets/skills/git.png"
+    },
+    {
+      "title": "GitHub",
+      "src": "../../assets/skills/github.png"
+    },
+    {
+      "title": "SAFe 5",
+      "src": "../../assets/skills/sp_small.png"
+    },
+    {
+      "title": "Jira",
+      "src": "../../assets/skills/jira.png"
+    },
+    {
+      "title": "Confluence",
+      "src": "../../assets/skills/confluence.png"
     },
     {
       "title": "Figma",
