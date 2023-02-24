@@ -7,7 +7,7 @@
     "school": "University of South Florida",
     "degree": "B.S. in Computer Engineering",
     "location": "Tampa, FL",
-    "graduation": "December 2017"
+    "graduation": ""
   },
   "workExperience": [
     {
@@ -15,10 +15,22 @@
       "start": "June 2019"
     },
     {
+      "company": "Planet Technologies",
+      "location": "Washington, DC (Remote)",
+      "start": "April 2022",
+      "end": "Current",
+      "position": "Frontend Software Engineer",
+      "responsibilities": [
+        "Created a custom classification portion marking tool which saved the company approximately $90,000.",
+        "Developed dynamic PDF generators for various forms using KendoUI library.",
+        "Began to lead development team to convert codebase from Javascript to Typescript."
+      ]
+    },
+    {
       "company": "GovernmentCIO",
       "location": "Washington, DC (Remote)",
       "start": "Dec 2021",
-      "end": "Current",
+      "end": "April 2022",
       "position": "Frontend Software Engineer",
       "responsibilities": [
         "Maintained all search related functionality for the VA.gov that is used by 6-10 million users per month.",
