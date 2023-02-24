@@ -14,22 +14,24 @@ export const About = ({ timeout }) => {
       timeout={{ enter: timeout, exit: timeout }}
       in={true}
       mountOnEnter
-      unmountOnExit>
+      unmountOnExit
+    >
       <Wrapper theme={theme}>
-        <AboutWrapper id='about' theme={theme}>
+        <AboutWrapper id="about" theme={theme}>
           <motion.div
-            className='aboutImg'
+            className="aboutImg"
             initial={{ x: 30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
               duration: 0.6,
               ease: 'easeIn',
-            }}>
+            }}
+          >
             <StaticImage
-              src='../../../assets/images/nyc.jpg'
-              alt='Tyler and Rachel in Times Square'
-              placeholder='blurred'
-              layout='constrained'
+              src="../../../assets/images/tyler-wedding-day.jpg"
+              alt="Tyler and Rachel in Times Square"
+              placeholder="blurred"
+              layout="constrained"
             />
           </motion.div>
           <Divider as={AboutDivider} theme={theme} />
@@ -41,8 +43,9 @@ export const About = ({ timeout }) => {
             transition={{
               duration: 1,
               ease: 'easeIn',
-            }}>
-            <PageTitle theme={theme} className='margin-bottom'>
+            }}
+          >
+            <PageTitle theme={theme} className="margin-bottom">
               About
             </PageTitle>
             {about.details.map((paragraph, index) => (
