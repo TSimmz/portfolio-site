@@ -37,27 +37,6 @@ const DarkToolTip = withStyles(() => ({
 }))(CustomToolTip);
 
 export const Skills = ({ theme }) => {
-  const renderSkillWithToolTip = (index, name, src, theme) => {
-    const image = getImage(src);
-
-    if (theme === 'light') {
-      return (
-        <LightToolTip key={index} title={name} aria-label={name} arrow>
-          <Skill key={index} theme={theme}>
-            <GatsbyImage image={image} alt={name} />
-          </Skill>
-        </LightToolTip>
-      );
-    }
-    return (
-      <DarkToolTip key={index} title={name} aria-label={name} arrow>
-        <Skill key={index} theme={theme}>
-          <GatsbyImage image={image} alt={name} />
-        </Skill>
-      </DarkToolTip>
-    );
-  };
-
   return (
     <StaticQuery
       query={graphql`
@@ -84,9 +63,16 @@ export const Skills = ({ theme }) => {
           <Wrapper theme={theme}>
             <h4>Skills</h4>
             <SkillsContainer>
-              {skills.map((skill, index) =>
-                renderSkillWithToolTip(index, skill.title, skill.src, theme)
-              )}
+              {skills.map((skill) => {
+                const image = getImage(skill.src);
+                console.log('Skill', skill);
+                return (
+                  <Skill key={skill.title} theme={theme}>
+                    <GatsbyImage image={image} alt={skill.title} />
+                    <p>{skill.title}</p>
+                  </Skill>
+                );
+              })}
             </SkillsContainer>
           </Wrapper>
         );

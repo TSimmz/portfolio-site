@@ -90,11 +90,11 @@ export const DownloadButton = styled(motion.a)`
 
   position: fixed;
   top: 5rem;
-  right: -135px;
+  right: -110px;
   z-index: 3;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 
   background: ${({ theme }) =>
@@ -120,7 +120,8 @@ export const DownloadButton = styled(motion.a)`
   }
 
   svg {
-    margin-left: 0.5rem;
+    margin-left: 0.7rem;
+    margin-right: 1rem;
     width: 30px;
     aspect-ratio: 1;
   }

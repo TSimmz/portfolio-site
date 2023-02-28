@@ -20,27 +20,30 @@ export const Resume = ({ timeout }) => {
       timeout={{ enter: timeout, exit: timeout }}
       in={true}
       mountOnEnter
-      unmountOnExit>
+      unmountOnExit
+    >
       <Wrapper theme={theme}>
-        <ResumeWrapper id='resume' theme={theme}>
+        <ResumeWrapper id="resume" theme={theme}>
           <DownloadButton
             href={resumePdf}
-            target='_blank'
-            aria-label='download Resume button'
-            theme={theme}>
-            <p>Download</p>
+            target="_blank"
+            aria-label="download Resume button"
+            theme={theme}
+          >
             <DownloadArrow />
+            <p>Download</p>
           </DownloadButton>
           <PageTitle
             as={motion.h1}
-            className='center'
+            className="center"
             theme={theme}
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
               duration: 1.2,
               ease: 'easeIn',
-            }}>
+            }}
+          >
             Resume
           </PageTitle>
           <Divider horizontal theme={theme} />
@@ -51,7 +54,8 @@ export const Resume = ({ timeout }) => {
             transition={{
               duration: resumeChildDuration,
               ease: 'easeIn',
-            }}>
+            }}
+          >
             <Skills theme={theme} />
           </ResumeList>
           <ResumeList
@@ -62,7 +66,8 @@ export const Resume = ({ timeout }) => {
               duration: resumeChildDuration,
               ease: 'easeIn',
               delay: resumeChildDelay,
-            }}>
+            }}
+          >
             <Experience experience={resume.workExperience} theme={theme} />
           </ResumeList>
           <ResumeList
@@ -73,7 +78,8 @@ export const Resume = ({ timeout }) => {
               duration: resumeChildDuration,
               ease: 'easeIn',
               delay: resumeChildDelay * 2,
-            }}>
+            }}
+          >
             <Education education={resume.education} theme={theme} />
           </ResumeList>
         </ResumeWrapper>

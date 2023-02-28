@@ -7,7 +7,7 @@
     "school": "University of South Florida",
     "degree": "B.S. in Computer Engineering",
     "location": "Tampa, FL",
-    "graduation": "December 2017"
+    "graduation": ""
   },
   "workExperience": [
     {
@@ -15,10 +15,22 @@
       "start": "June 2019"
     },
     {
+      "company": "Planet Technologies",
+      "location": "Washington, DC (Remote)",
+      "start": "April 2022",
+      "end": "Current",
+      "position": "Frontend Software Engineer",
+      "responsibilities": [
+        "Created a custom classification portion marking tool which saved the company approximately $90,000.",
+        "Leveraged advanced JavaScript coding to design & develop secure, complex service-based architectures and/or microservices.",
+        "Developed dynamic PDF generators for various forms using KendoUI library."
+      ]
+    },
+    {
       "company": "GovernmentCIO",
       "location": "Washington, DC (Remote)",
       "start": "Dec 2021",
-      "end": "Current",
+      "end": "April 2022",
       "position": "Frontend Software Engineer",
       "responsibilities": [
         "Maintained all search related functionality for the VA.gov that is used by 6-10 million users per month.",
@@ -65,26 +77,6 @@
   ],
   "skills": [
     {
-      "title": "Git",
-      "src": "../../assets/skills/git.png"
-    },
-    {
-      "title": "GitHub",
-      "src": "../../assets/skills/github.png"
-    },
-    {
-      "title": "SAFe 5",
-      "src": "../../assets/skills/sp_small.png"
-    },
-    {
-      "title": "Jira",
-      "src": "../../assets/skills/jira.png"
-    },
-    {
-      "title": "Confluence",
-      "src": "../../assets/skills/confluence.png"
-    },
-    {
       "title": "HTML 5",
       "src": "../../assets/skills/HTML5.png"
     },
@@ -105,15 +97,23 @@
       "src": "../../assets/skills/react.png"
     },
     {
+      "title": "NextJS",
+      "src": "../../assets/skills/nextjs.png"
+    },
+    {
+      "title": "GatsbyJS",
+      "src": "../../assets/skills/gatsby.png"
+    },
+    {
       "title": "Redux",
       "src": "../../assets/skills/redux.png"
     },
     {
-      "title": "Gatsby",
-      "src": "../../assets/skills/gatsby.png"
+      "title": "MantineUI",
+      "src": "../../assets/skills/mantine-ui.png"
     },
     {
-      "title": "Styled Components",
+      "title": "Styled Component",
       "src": "../../assets/skills/styled-components.png"
     },
     {
@@ -121,8 +121,40 @@
       "src": "../../assets/skills/nodejs.png"
     },
     {
+      "title": "tRPC",
+      "src": "../../assets/skills/trpc.png"
+    },
+    {
+      "title": "Prisma",
+      "src": "../../assets/skills/prisma.png"
+    },
+    {
+      "title": "MongoDB",
+      "src": "../../assets/skills/mongodb.png"
+    },
+    {
       "title": "VS Code",
       "src": "../../assets/skills/vscode.png"
+    },
+    {
+      "title": "Git",
+      "src": "../../assets/skills/git.png"
+    },
+    {
+      "title": "GitHub",
+      "src": "../../assets/skills/github.png"
+    },
+    {
+      "title": "SAFe 5",
+      "src": "../../assets/skills/sp_small.png"
+    },
+    {
+      "title": "Jira",
+      "src": "../../assets/skills/jira.png"
+    },
+    {
+      "title": "Confluence",
+      "src": "../../assets/skills/confluence.png"
     },
     {
       "title": "Figma",
